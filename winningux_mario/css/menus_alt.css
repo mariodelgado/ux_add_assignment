@@ -1,0 +1,172 @@
+/* line 1, ../sass/menus_alt.scss */
+.manage-menu {
+  height: 0px;
+  background: rgba(85, 85, 85, 0.96);
+  		/*
+  left: 0;
+  	right: 0;
+  */
+  bottom: 0;
+  top: auto;
+  width: 1344px !important;
+  overflow: hidden;
+  position: absolute;
+  padding: 0;
+  position: fixed;
+  margin: 0 -12px;
+  padding: 0 24px;
+  -webkit-transition: height .2s ease-in-out;
+  -moz-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out; }
+
+/* line 22, ../sass/menus_alt.scss */
+.manage-menu ul {
+  overflow: visible;
+  max-height: 100%;
+  height: auto; }
+
+/* line 29, ../sass/menus_alt.scss */
+.bb-content-nav ul li {
+  position: static; }
+
+/* line 34, ../sass/menus_alt.scss */
+.mng-display {
+  height: 300px;
+  bottom: 0;
+  display: block;
+  opacity: 1;
+  overflow: visible;
+  -webkit-transition: height .2s ease-in-out;
+  -moz-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out; }
+  /* line 45, ../sass/menus_alt.scss */
+  .mng-display > ul {
+    -webkit-column-count: 2;
+    max-height: 200px;
+    display: inline-block;
+    width: 48%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top; }
+    /* line 55, ../sass/menus_alt.scss */
+    .mng-display > ul li {
+      -webkit-break-inside: avoid-column;
+      -webkit-column-break-inside: avoid;
+      -moz-column-break-inside: avoid;
+      column-break-inside: avoid; }
+    /* line 65, ../sass/menus_alt.scss */
+    .mng-display > ul a {
+      padding: 6px 9px;
+      display: block; }
+      /* line 70, ../sass/menus_alt.scss */
+      .mng-display > ul a:hover {
+        text-decoration: underline;
+        background: transparent; }
+  /* line 80, ../sass/menus_alt.scss */
+  .mng-display h3 {
+    color: #aaa;
+    font-weight: 300;
+    margin: 18px 6px 18px;
+    font-size: 20px; }
+  /* line 89, ../sass/menus_alt.scss */
+  .mng-display > .tools {
+    -webkit-column-count: 1;
+    border-left: 1px solid #777;
+    padding: 0 0 0 18px; }
+
+/* line 95, ../sass/menus_alt.scss */
+.sticky + .bb-content-holder .mng-display {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  z-index: 90; }
+
+/* line 103, ../sass/menus_alt.scss */
+.submenu {
+  width: 200px;
+  position: relative;
+  top: auto;
+  left: auto;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0px;
+  width: 100%; }
+  /* line 115, ../sass/menus_alt.scss */
+  .submenu li {
+    -webkit-break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid; }
+  /* line 122, ../sass/menus_alt.scss */
+  .submenu a, .submenu a:hover {
+    background: transparent;
+    color: #ccc;
+    padding: 3px 12px !important;
+    -webkit-break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    font-size: 95%;
+    font-weight: 200; }
+
+/* line 135, ../sass/menus_alt.scss */
+.manage-menu li:hover .submenu {
+  top: auto;
+  left: auto;
+  bottom: auto; }
+
+/* line 141, ../sass/menus_alt.scss */
+.global-nav-flyout {
+  width: 100%;
+  height: 300px;
+  margin: 0 -12px;
+  width: 1344px;
+  position: fixed;
+  right: auto;
+  top: 0;
+  background: rgba(235, 232, 232, 0.97);
+  padding-top: 0;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4); }
+  /* line 154, ../sass/menus_alt.scss */
+  .global-nav-flyout h3 {
+    color: #aaa;
+    font-weight: 300;
+    margin: 18px 24px;
+    font-size: 20px; }
+
+/* line 161, ../sass/menus_alt.scss */
+.global-nav > div.flyout-on a.active {
+  background: transparent;
+  border: 0; }
+
+/* line 166, ../sass/menus_alt.scss */
+.global-nav div.flyout-on a.active {
+  width: auto; }
+
+/* line 171, ../sass/menus_alt.scss */
+.control-panel-toggle a {
+  color: #FFF;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  background: #555;
+  padding: 14px 12px 14px 30px;
+  width: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 40px; }
+
+/* line 186, ../sass/menus_alt.scss */
+.control-panel-toggle a.attention:after,
+.manage-menu .attention:after {
+  color: white !important; }
+
+/* line 193, ../sass/menus_alt.scss */
+.manage-menu .attention:after {
+  font-size: 20px !important; }
+
+/* line 201, ../sass/menus_alt.scss */
+.manage-menu li:hover > a {
+  background: transparent; }

@@ -1,0 +1,21 @@
+/* line 7, ../sass/_elements.scss */
+.required:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  background: orange; }
+
+/* line 32, ../sass/_elements.scss */
+.content-item.outline-item.new-item {
+  background: #ffffcc; }
+
+/* line 39, ../sass/_elements.scss */
+.item-wrapper {
+  position: relative; }
+
+/* line 46, ../sass/_elements.scss */
+.upload-wrap {
+  text-align: center;
+  padding: 12px 0; }

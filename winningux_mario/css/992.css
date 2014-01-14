@@ -1,0 +1,21 @@
+/* line 13, ../sass/992.scss */
+.global-nav {
+  top: -70px; }
+
+/* line 17, ../sass/992.scss */
+.user-name a .name-text {
+  display: inline-block; }
+
+/* line 33, ../sass/992.scss */
+.global-nav-flyout {
+  top: -70px; }
+
+/* line 42, ../sass/992.scss */
+.bb-content-holder.has-menu .content,
+.bb-content-holder.has-menu .outline,
+.bb-outline-holder.has-menu .content,
+.bb-outline-holder.has-menu .outline {
+  margin-left: 220px;
+  -webkit-transition: margin-left .2s ease-in-out;
+  -moz-transition: margin-left .2s ease-in-out;
+  transition: margin-left .2s ease-in-out; }

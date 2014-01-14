@@ -1,0 +1,39 @@
+/* line 1, ../sass/1382.scss */
+.bb-box {
+  max-width: 1320px; }
+
+/* line 13, ../sass/1382.scss */
+.global-nav {
+  top: -70px; }
+
+/* line 17, ../sass/1382.scss */
+.user-name a .name-text {
+  display: inline-block; }
+
+/*
+.branding,
+.bb-chrome-header {
+	width: 1320px;
+}
+*/
+/* line 40, ../sass/1382.scss */
+.drawer {
+  max-width: 1100px; }
+
+/* line 44, ../sass/1382.scss */
+.global-nav-flyout {
+  top: -70px; }
+
+/* line 50, ../sass/1382.scss */
+.outline-inventory {
+  -webkit-column-count: 5; }
+
+/* line 57, ../sass/1382.scss */
+.bb-content-holder.has-menu .content,
+.bb-content-holder.has-menu .outline,
+.bb-outline-holder.has-menu .content,
+.bb-outline-holder.has-menu .outline {
+  margin-left: 220px;
+  -webkit-transition: margin-left .2s ease-in-out;
+  -moz-transition: margin-left .2s ease-in-out;
+  transition: margin-left .2s ease-in-out; }

@@ -1,0 +1,680 @@
+@charset "UTF-8";
+/* $base-line-height: 		floor($base-font-size * 1.61803); */
+/* Pictos
+ * -------------------------- */
+/*
+@font-face {
+	font-family: 		"Pictos";
+	src: 				url('../fonts/pictos-web.eot');
+	src: 				local('☺'), 
+  						url('../fonts/pictos-web.woff') format('woff'), 
+  						url('../fonts/pictos-web.ttf') format('truetype'), 
+  						url('../fonts/pictos-web.svg#webfontphKv1xv9') format('svg');
+  	-webkit-font-smoothing: antialiased;
+}
+*/
+/* FontAwesome
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot?v=3.2.1");
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix&v=3.2.1") format("embedded-opentype"), url("../fonts/FontAwesome/fontawesome-webfont.woff?v=3.2.1") format("woff"), url("../fonts/FontAwesome/fontawesome-webfont.ttf?v=3.2.1") format("truetype"), url("../fonts/FontAwesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 6, ../sass/tungsten.scss */
+.branding {
+  height: 210px;
+  min-height: 210px;
+  max-height: 210px;
+  background: url("../images/campus_bg.jpg") no-repeat bottom center;
+  background-size: cover;
+  background-origin: border-box; }
+
+/* line 17, ../sass/tungsten.scss */
+.branding + .bb-chrome {
+  margin-top: 140px; }
+
+/* line 24, ../sass/tungsten.scss */
+.tungsten-alt .branding {
+  height: 70px;
+  min-height: 70px;
+  max-height: 70px;
+  background: transparent; }
+/* line 31, ../sass/tungsten.scss */
+.tungsten-alt .branding + .bb-chrome {
+  margin-top: 70px; }
+/* line 35, ../sass/tungsten.scss */
+.tungsten-alt .course-name {
+  background: #f0f0f0;
+  color: #000;
+  text-shadow: none; }
+/* line 42, ../sass/tungsten.scss */
+.tungsten-alt .sticky {
+  border-width: 0;
+  box-shadow: none; }
+  /* line 46, ../sass/tungsten.scss */
+  .tungsten-alt .sticky .course-name {
+    background: #f0f0f0; }
+
+/* line 54, ../sass/tungsten.scss */
+.tungsten-10 {
+  background: url("../images/handmadepaper.png") repeat 0 0; }
+  /* line 58, ../sass/tungsten.scss */
+  .tungsten-10 main {
+    padding: 18px 0 24px;
+    border: 1px solid #cecece;
+    border-width: 0 1px; }
+  /* line 65, ../sass/tungsten.scss */
+  .tungsten-10 .content-item {
+    padding-left: 30px;
+    padding-right: 30px; }
+  /* line 69, ../sass/tungsten.scss */
+  .tungsten-10 .add-content {
+    position: relative; }
+  /* line 73, ../sass/tungsten.scss */
+  .tungsten-10 .add-action {
+    top: -37px; }
+  /* line 77, ../sass/tungsten.scss */
+  .tungsten-10 .add-content .close-add-menu {
+    top: 9px;
+    right: 12px;
+    color: #ccc; }
+  /* line 84, ../sass/tungsten.scss */
+  .tungsten-10 .course-name h2 {
+    font-weight: 600;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 34px; }
+  /* line 90, ../sass/tungsten.scss */
+  .tungsten-10 .sticky .mode-controls {
+    margin-top: 12px; }
+  /* line 94, ../sass/tungsten.scss */
+  .tungsten-10 .sticky .course-name h2 {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 22px; }
+  /* line 101, ../sass/tungsten.scss */
+  .tungsten-10 .branding {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    background: #000;
+    background: url("../images/san-francisco-aerial-view.jpg") no-repeat bottom center;
+    background-size: cover;
+    background-origin: border-box; }
+  /* line 112, ../sass/tungsten.scss */
+  .tungsten-10 .branding + .bb-chrome {
+    margin-top: 210px; }
+  /* line 116, ../sass/tungsten.scss */
+  .tungsten-10 .course-name {
+    background: transparent;
+    color: #fff;
+    text-shadow: none;
+    text-align: center;
+    font-weight: 600; }
+  /* line 125, ../sass/tungsten.scss */
+  .tungsten-10 .sticky {
+    border-width: 0;
+    box-shadow: none; }
+    /* line 129, ../sass/tungsten.scss */
+    .tungsten-10 .sticky .course-name {
+      background: #000;
+      color: #FFF; }
+  /* line 135, ../sass/tungsten.scss */
+  .tungsten-10 .bb-chrome {
+    box-shadow: none;
+    background: transparent; }
+  /* line 140, ../sass/tungsten.scss */
+  .tungsten-10 .title-text {
+    font-weight: 600; }
+  /* line 147, ../sass/tungsten.scss */
+  .tungsten-10 .content-item .content-item-title {
+    font-size: 18px;
+    margin: 0;
+    font-family: "Helvetica-Neue", Arial, sans-serif; }
+  @media only screen and (min-width: 1024px) {
+    /* line 155, ../sass/tungsten.scss */
+    .tungsten-10 [class*="text"] .vtbe-output {
+      -webkit-column-count: 2; } }
+  /* line 165, ../sass/tungsten.scss */
+  .tungsten-10 .scrubber {
+    width: 18px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(238, 238, 238, 0.7);
+    z-index: 1000;
+    text-align: center;
+    color: #aaa; }
+    /* line 176, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber a {
+      color: #aaa; }
+    /* line 180, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber:hover {
+      width: 40px;
+      background: rgba(52, 158, 104, 0.78);
+      -webkit-transition: width ease .2s, color ease .2s;
+      font-size: 18px; }
+      /* line 187, ../sass/tungsten.scss */
+      .tungsten-10 .scrubber:hover a {
+        color: rgba(255, 255, 255, 0.6); }
+        /* line 190, ../sass/tungsten.scss */
+        .tungsten-10 .scrubber:hover a:hover {
+          color: white; }
+    /* line 197, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber [class*="item"] {
+      background: rgba(0, 0, 0, 0.1);
+      border-top: 1px solid #fff;
+      padding-top: 6px; }
+    /* line 204, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber [class*="item"] {
+      position: relative; }
+      /* line 207, ../sass/tungsten.scss */
+      .tungsten-10 .scrubber [class*="item"]:hover {
+        background: rgba(0, 0, 0, 0.3); }
+    /* line 212, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber .item-1 {
+      height: 15%; }
+    /* line 217, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber .item-2 {
+      height: 33%; }
+    /* line 221, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber .item-3 {
+      height: 12%; }
+    /* line 225, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber .item-4 {
+      height: 40%; }
+    /* line 229, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber .scrubber-handle {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border: 3px solid #fff;
+      position: absolute;
+      top: 33%;
+      right: 9px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); }
+  /* line 243, ../sass/tungsten.scss */
+  .tungsten-10 .scrubber-flyout {
+    background: #FFF;
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    color: #333; }
+    /* line 258, ../sass/tungsten.scss */
+    .tungsten-10 .scrubber-flyout h5 {
+      margin: 3px 0; }
+      /* line 260, ../sass/tungsten.scss */
+      .tungsten-10 .scrubber-flyout h5 a {
+        color: #333333 !important; }
+  /* line 268, ../sass/tungsten.scss */
+  .tungsten-10 [class*="item"]:hover .scrubber-flyout {
+    background: #FFF;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: -210px;
+    display: block; }
+  /* line 281, ../sass/tungsten.scss */
+  .tungsten-10 .question {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 24px 0; }
+  /* line 289, ../sass/tungsten.scss */
+  .tungsten-10 figure {
+    text-align: center;
+    margin: 0 auto 24px; }
+  /* line 294, ../sass/tungsten.scss */
+  .tungsten-10 .add-content section {
+    background: #e5e5e5;
+    margin: 0; }
+    /* line 300, ../sass/tungsten.scss */
+    .tungsten-10 .add-content section [class*="button"],
+    .tungsten-10 .add-content section [class*="button"] i:before {
+      color: #359F69; }
+  /* line 305, ../sass/tungsten.scss */
+  .tungsten-10 .text-form {
+    border: 2px solid #348F60;
+    border-width: 4px 0;
+    margin: 0 0;
+    padding: 24px 30px;
+    background: #f0f0f0; }
+  /* line 313, ../sass/tungsten.scss */
+  .tungsten-10 .lesson-section {
+    border-top: 0 !important; }
+    /* line 316, ../sass/tungsten.scss */
+    .tungsten-10 .lesson-section h2 {
+      display: none; }
+  /* line 322, ../sass/tungsten.scss */
+  .tungsten-10 .is-editable .content-item,
+  .tungsten-10 .is-editable .content-item:hover {
+    padding: 12px 30px;
+    border: 0;
+    box-shadow: none; }
+  /* line 328, ../sass/tungsten.scss */
+  .tungsten-10 .drop-target span {
+    border: 0;
+    margin: 12px auto 0;
+    color: #359F69;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 49px;
+    border: 2px solid #359F69; }
+  /* line 339, ../sass/tungsten.scss */
+  .tungsten-10 .input-large, .tungsten-10 textarea {
+    font-size: 15px;
+    padding: 9px 12px;
+    border: 0;
+    background: transparent; }
+  /* line 352, ../sass/tungsten.scss */
+  .tungsten-10 .vtbe-wrap {
+    border-width: 1px 0 0 0;
+    margin-top: 12px;
+    padding-top: 12px; }
+  /* line 359, ../sass/tungsten.scss */
+  .tungsten-10 [class*="button"] {
+    font-weight: 400; }
+  /* line 363, ../sass/tungsten.scss */
+  .tungsten-10 [class*="button"] + [class*="button"] {
+    margin-left: 6px; }
+
+/* line 373, ../sass/tungsten.scss */
+.bb-chrome {
+  box-shadow: none;
+  background: transparent; }
+
+/* line 378, ../sass/tungsten.scss */
+.course-name {
+  background: transparent;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  border-bottom: 0; }
+  /* line 384, ../sass/tungsten.scss */
+  .course-name h2 {
+    font-size: 28px; }
+
+/* line 390, ../sass/tungsten.scss */
+.sticky {
+  border-width: 0;
+  box-shadow: 0 28px 12px -11px white; }
+  /* line 394, ../sass/tungsten.scss */
+  .sticky .course-name {
+    background: url("../images/campus_bg.jpg") no-repeat bottom center;
+    background-size: cover;
+    background-origin: border-box; }
+
+/* line 403, ../sass/tungsten.scss */
+.push-left {
+  float: left; }
+
+/* line 407, ../sass/tungsten.scss */
+.push-right {
+  float: right; }
+
+/* line 412, ../sass/tungsten.scss */
+.centered,
+.centered > * {
+  text-align: center;
+  margin: 0 auto; }
+
+/* line 417, ../sass/tungsten.scss */
+.flush-right {
+  text-align: right; }
+
+/* line 424, ../sass/tungsten.scss */
+figure.push-right {
+  margin: 0 0 12px 36px; }
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    /* line 424, ../sass/tungsten.scss */
+    figure.push-right {
+      margin-right: 0;
+      margin-left: 0; } }
+/* line 432, ../sass/tungsten.scss */
+figure.push-left {
+  margin: 0 36px 12px 0; }
+  @media only screen and (min-width: 320px) and (max-width: 479px) {
+    /* line 432, ../sass/tungsten.scss */
+    figure.push-left {
+      margin-right: 0;
+      margin-left: 0; } }
+/* line 442, ../sass/tungsten.scss */
+figure.full-width img {
+  width: 100%; }
+/* line 447, ../sass/tungsten.scss */
+figure figcaption {
+  font-style: italic; }
+
+/* line 455, ../sass/tungsten.scss */
+.vtbe-output {
+  font-size: 17px;
+  line-height: 25px;
+  font-family: "calluna", Cambria, Georgia, "Times New Roman", Times, serif; }
+  @media only screen and (min-width: 768px) {
+    /* line 455, ../sass/tungsten.scss */
+    .vtbe-output {
+      font-size: 16px;
+      line-height: 22px; } }
+
+/* line 468, ../sass/tungsten.scss */
+.vtbe-output img {
+  border: 0;
+  padding: 0;
+  margin-bottom: 6px; }
+
+/* line 479, ../sass/tungsten.scss */
+.add-content section {
+  text-align: center;
+  padding: 24px 0; }
+
+/* line 485, ../sass/tungsten.scss */
+.content, .bb-payload {
+  padding: 0px 24px 34px; }
+  @media only screen and (min-width: 768px) {
+    /* line 485, ../sass/tungsten.scss */
+    .content, .bb-payload {
+      padding: 0 30px 34px; } }
+
+/* line 494, ../sass/tungsten.scss */
+.lesson-section {
+  border-top: 1px solid #ccc;
+  margin: 0 -60px;
+  padding: 0 60px;
+  position: relative; }
+  /* line 500, ../sass/tungsten.scss */
+  .lesson-section h2 {
+    font-weight: 200;
+    margin: 12px 0; }
+
+/* line 506, ../sass/tungsten.scss */
+.content-item {
+  padding: 24px 0; }
+
+/* line 513, ../sass/tungsten.scss */
+.is-editable .content-item {
+  padding: 12px 24px 24px; }
+/* line 517, ../sass/tungsten.scss */
+.is-editable .lesson-section {
+  margin-top: 38px; }
+
+/* line 523, ../sass/tungsten.scss */
+.lesson-section > .item-reorder {
+  left: 0; }
+
+/* line 529, ../sass/tungsten.scss */
+.add-section {
+  margin: 0 -60px;
+  padding-right: 60px;
+  padding-left: 60px; }
+  /* line 534, ../sass/tungsten.scss */
+  .add-section h5 {
+    font-weight: 100;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 24px 0 0; }
+
+/* line 543, ../sass/tungsten.scss */
+.page-title-input {
+  font-weight: 200; }
+
+/* line 547, ../sass/tungsten.scss */
+.is-editable.edit-controls-hide .lesson-section:hover .add-action {
+  -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  z-index: 10;
+  opacity: 1; }
+
+/* line 556, ../sass/tungsten.scss */
+.content-item .content-item-title {
+  font-size: 18px;
+  margin: 0;
+  font-family: "calluna", Cambria, Georgia, "Times New Roman", Times, serif; }
+
+/* line 564, ../sass/tungsten.scss */
+.width-50 {
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+  padding-right: 12px;
+  padding-left: 12px; }
+  @media only screen and (min-width: 768px) {
+    /* line 564, ../sass/tungsten.scss */
+    .width-50 {
+      width: 100%;
+      display: block;
+      padding-right: 0;
+      padding-left: 0; } }
+
+@media only screen and (min-width: 1340px) {
+  /* line 582, ../sass/tungsten.scss */
+  .content-item.text-wide .vtbe-output,
+  .content-item.image .vtbe-output {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 48px; } }
+@media only screen and (min-width: 1024px) {
+  /* line 582, ../sass/tungsten.scss */
+  .content-item.text-wide .vtbe-output,
+  .content-item.image .vtbe-output {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 48px; } }
+@media only screen and (min-width: 1340px) {
+  /* line 595, ../sass/tungsten.scss */
+  .content-item.text-wide figure,
+  .content-item.image figure {
+    width: 100%; }
+    /* line 599, ../sass/tungsten.scss */
+    .content-item.text-wide figure img,
+    .content-item.image figure img {
+      width: 100%; } }
+@media only screen and (min-width: 1024px) {
+  /* line 595, ../sass/tungsten.scss */
+  .content-item.text-wide figure,
+  .content-item.image figure {
+    width: 100%; }
+    /* line 607, ../sass/tungsten.scss */
+    .content-item.text-wide figure img,
+    .content-item.image figure img {
+      width: 100%; } }
+
+@media only screen and (min-width: 1340px) {
+  /* line 619, ../sass/tungsten.scss */
+  .tungsten-alt .content-item.text-wide .vtbe-output,
+  .tungsten-alt .content-item.image .vtbe-output {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 48px; } }
+@media only screen and (min-width: 1024px) {
+  /* line 619, ../sass/tungsten.scss */
+  .tungsten-alt .content-item.text-wide .vtbe-output,
+  .tungsten-alt .content-item.image .vtbe-output {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 48px; } }
+@media only screen and (min-width: 1340px) {
+  /* line 632, ../sass/tungsten.scss */
+  .tungsten-alt .content-item.text-wide figure,
+  .tungsten-alt .content-item.image figure {
+    width: 33%; }
+    /* line 636, ../sass/tungsten.scss */
+    .tungsten-alt .content-item.text-wide figure img,
+    .tungsten-alt .content-item.image figure img {
+      width: 100%; } }
+@media only screen and (min-width: 1024px) {
+  /* line 632, ../sass/tungsten.scss */
+  .tungsten-alt .content-item.text-wide figure,
+  .tungsten-alt .content-item.image figure {
+    width: 33%; }
+    /* line 644, ../sass/tungsten.scss */
+    .tungsten-alt .content-item.text-wide figure img,
+    .tungsten-alt .content-item.image figure img {
+      width: 100%; } }
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  /* line 632, ../sass/tungsten.scss */
+  .tungsten-alt .content-item.text-wide figure,
+  .tungsten-alt .content-item.image figure {
+    width: 100%; }
+    /* line 652, ../sass/tungsten.scss */
+    .tungsten-alt .content-item.text-wide figure img,
+    .tungsten-alt .content-item.image figure img {
+      width: 100%; } }
+/* line 660, ../sass/tungsten.scss */
+.tungsten-alt .add-content .panel-title {
+  font-family: "ff-nuvo-web-pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 200; }
+/* line 666, ../sass/tungsten.scss */
+.tungsten-alt .vtbe-output {
+  font-family: "calluna", Georgia, "Times New Roman", Times, serif; }
+/* line 670, ../sass/tungsten.scss */
+.tungsten-alt .lesson-section {
+  border-top: 1px solid #ccc;
+  margin: 0 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  font-family: "ff-nuvo-web-pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase; }
+  /* line 681, ../sass/tungsten.scss */
+  .tungsten-alt .lesson-section .item-reorder {
+    left: -37px; }
+
+/* line 691, ../sass/tungsten.scss */
+.image-gallery {
+  width: 100%;
+  overflow: auto; }
+  /* line 695, ../sass/tungsten.scss */
+  .image-gallery .inner-wrap {
+    width: 3172px;
+    /*dynamic*/
+    overflow-x: hidden; }
+    /* line 699, ../sass/tungsten.scss */
+    .image-gallery .inner-wrap img {
+      height: 300px;
+      display: inline-block;
+      vertical-align: top; }
+
+/* line 708, ../sass/tungsten.scss */
+.button-play {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 50%;
+  margin-left: -18px;
+  top: 50%;
+  margin-top: -18px;
+  height: 90px;
+  width: 90px;
+  min-width: 90px;
+  line-height: 88px;
+  border: 0; }
+  /* line 722, ../sass/tungsten.scss */
+  .button-play i[class*="icon"]:before {
+    text-shadow: none;
+    color: #fff;
+    font-size: 50px;
+    margin-right: -6px; }
+
+/* line 734, ../sass/tungsten.scss */
+.hero-holder {
+  margin: 0 0;
+  position: relative; }
+  /* line 738, ../sass/tungsten.scss */
+  .hero-holder .control-bar {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    opacity: 0;
+    z-index: 10; }
+  /* line 746, ../sass/tungsten.scss */
+  .hero-holder quote {
+    border-left: 3px solid #ccc;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 26px;
+    display: block;
+    padding: 12px 18px;
+    margin: 12px 18px; }
+  /* line 756, ../sass/tungsten.scss */
+  .hero-holder img {
+    height: 400px;
+    width: auto; }
+    @media only screen and (min-width: 568px) and (max-width: 767px) {
+      /* line 756, ../sass/tungsten.scss */
+      .hero-holder img {
+        width: 100%;
+        max-height: auto;
+        height: auto; } }
+  @media only screen and (min-width: 768px) {
+    /* line 734, ../sass/tungsten.scss */
+    .hero-holder {
+      margin: 0 0; } }
+  /* line 772, ../sass/tungsten.scss */
+  .hero-holder .transcript {
+    padding: 0 60px 24px;
+    font-size: 15px;
+    line-height: 22px;
+    background: #f0f0f0;
+    font-family: "ff-nuvo-web-pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600; }
+    /* line 782, ../sass/tungsten.scss */
+    .hero-holder .transcript p {
+      margin-top: -12px; }
+    @media only screen and (min-width: 768px) {
+      /* line 772, ../sass/tungsten.scss */
+      .hero-holder .transcript {
+        padding: 12px 30px; } }
+  /* line 792, ../sass/tungsten.scss */
+  .hero-holder .text {
+    padding: 24px 60px 30px;
+    margin-bottom: 37px;
+    font-size: 16px;
+    line-height: 26px;
+    background: #E4E8E9;
+    font-family: "ff-nuvo-web-pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 60px; }
+    /* line 804, ../sass/tungsten.scss */
+    .hero-holder .text p:first-child:first-letter {
+      font-weight: 800;
+      float: left;
+      font-size: 75px;
+      line-height: 68px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px; }
+
+/* line 818, ../sass/tungsten.scss */
+.is-editable.edit-controls-hide.hero-holder:hover .control-bar {
+  opacity: 1;
+  visibility: visible; }
+
+/* line 823, ../sass/tungsten.scss */
+video {
+  width: 100%;
+  background: #333; }
+
+/* line 830, ../sass/tungsten.scss */
+.typekit-badge {
+  display: none; }

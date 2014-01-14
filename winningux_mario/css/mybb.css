@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/* $base-line-height: 		floor($base-font-size * 1.61803); */
+/* Pictos
+ * -------------------------- */
+/*
+@font-face {
+	font-family: 		"Pictos";
+	src: 				url('../fonts/pictos-web.eot');
+	src: 				local('☺'), 
+  						url('../fonts/pictos-web.woff') format('woff'), 
+  						url('../fonts/pictos-web.ttf') format('truetype'), 
+  						url('../fonts/pictos-web.svg#webfontphKv1xv9') format('svg');
+  	-webkit-font-smoothing: antialiased;
+}
+*/
+/* FontAwesome
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot?v=3.2.1");
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix&v=3.2.1") format("embedded-opentype"), url("../fonts/FontAwesome/fontawesome-webfont.woff?v=3.2.1") format("woff"), url("../fonts/FontAwesome/fontawesome-webfont.ttf?v=3.2.1") format("truetype"), url("../fonts/FontAwesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 8, ../sass/mybb.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 13, ../sass/mybb.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 18, ../sass/mybb.scss */
+a {
+  color: #c7602a; }
+
+/* line 21, ../sass/mybb.scss */
+.mybb {
+  position: fixed;
+  top: 0;
+  left: 12px;
+  bottom: 0;
+  right: 12px;
+  z-index: 200;
+  margin: 0;
+  background: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0; }
+
+/* line 39, ../sass/mybb.scss */
+.mybb-nav {
+  width: 74px;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  position: fixed;
+  padding-top: 12px;
+  border-right: 3px solid #ccc;
+  background: url("data:image/gif;base64,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"); }
+  /* line 53, ../sass/mybb.scss */
+  .mybb-nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 12px;
+    border-right: 3px solid #ccc;
+    margin-right: -3px; }
+    /* line 63, ../sass/mybb.scss */
+    .mybb-nav a span:before {
+      content: attr(data-icon);
+      font: 2.2em "Pictos";
+      color: #999;
+      -webkit-font-smoothing: antialiased; }
+    /* line 70, ../sass/mybb.scss */
+    .mybb-nav a.current {
+      border-right-color: #c7602a; }
+      /* line 73, ../sass/mybb.scss */
+      .mybb-nav a.current span:before {
+        color: #c7602a; }
+
+/* line 83, ../sass/mybb.scss */
+.mybb-content {
+  margin-left: 74px;
+  position: relative; }
+  /* line 89, ../sass/mybb.scss */
+  .mybb-content .mybb-header {
+    margin: 0 18px; }
+  /* line 94, ../sass/mybb.scss */
+  .mybb-content h1 {
+    margin: 0;
+    font-weight: 200;
+    padding: 16px 12px;
+    text-transform: uppercase;
+    color: #c7602a; }
+
+/* line 103, ../sass/mybb.scss */
+.close-add {
+  float: right;
+  text-decoration: none;
+  margin: 22px 12px 0 0; }
+  /* line 108, ../sass/mybb.scss */
+  .close-add span:before {
+    content: attr(data-icon);
+    font: 2.4em "Pictos";
+    color: #999; }
+
+/* line 117, ../sass/mybb.scss */
+.mybb-columns .column {
+  float: left;
+  width: 50%;
+  overflow: auto; }
+
+/* line 135, ../sass/mybb.scss */
+.conversation-wrapper {
+  border: 2px solid #c7602a;
+  border-width: 2px 0;
+  margin: 0 18px 0 0;
+  background: #faede7;
+  position: relative;
+  overflow: auto; }
+  /* line 143, ../sass/mybb.scss */
+  .conversation-wrapper .message {
+    margin: 0;
+    border-top: 0; }
+
+/* line 149, ../sass/mybb.scss */
+.conversation-header h2 {
+  padding: 9px 18px;
+  margin: 0 0 6px;
+  color: #c7602a;
+  font-size: 1.4em; }
+
+/* line 157, ../sass/mybb.scss */
+.message {
+  padding: 12px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  margin: 0 18px;
+  position: relative;
+  margin-top: -2px; }
+  /* line 159, ../sass/mybb.scss */
+  .message .time {
+    float: right;
+    color: #999; }
+  /* line 172, ../sass/mybb.scss */
+  .message:hover {
+    background: #f0f0f0; }
+  /* line 176, ../sass/mybb.scss */
+  .message.current {
+    border-color: #c7602a;
+    z-index: 100;
+    margin-right: 0px;
+    background: #faede7; }
+  /* line 184, ../sass/mybb.scss */
+  .message.conversation {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed; }
+  /* line 188, ../sass/mybb.scss */
+  .message .author {
+    color: #999; }
+    /* line 191, ../sass/mybb.scss */
+    .message .author a {
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 60px; }
+    /* line 196, ../sass/mybb.scss */
+    .message .author img {
+      max-height: 36px;
+      position: absolute;
+      left: 12px; }
+  /* line 205, ../sass/mybb.scss */
+  .message .message-text {
+    padding: 9px 0;
+    margin-left: 60px; }
+
+/* line 213, ../sass/mybb.scss */
+.tags span {
+  background: #f0f0f0;
+  display: inline-block;
+  padding: 1px 12px;
+  border-radius: 12px;
+  font-size: .85em;
+  color: #999; }
+
+/* line 222, ../sass/mybb.scss */
+.utility {
+  padding: 0 0 12px;
+  margin: 0 18px; }
+
+/* line 228, ../sass/mybb.scss */
+.reply-bit {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  padding: 24px 12px;
+  margin-right: 24px;
+  width: 100%; }
+  @media only screen and (min-width: 1340px) {
+    /* line 228, ../sass/mybb.scss */
+    .reply-bit {
+      width: 595px; } }
+
+/* line 251, ../sass/mybb.scss */
+.mybb-button-primary {
+  background: #c7602a;
+  background-image: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 9px 18px;
+  text-decoration: none;
+  border: 0; }
+  /* line 260, ../sass/mybb.scss */
+  .mybb-button-primary:hover {
+    background: darken #c7602a, 10%; }
+
+/* line 267, ../sass/mybb.scss */
+.pulldown-wrap {
+  display: inline-block;
+  margin-left: 22px;
+  text-transform: capitalize;
+  position: relative;
+  font-size: 1rem; }
+  /* line 273, ../sass/mybb.scss */
+  .pulldown-wrap > a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 8px 48px 8px 18px;
+    display: block;
+    color: #666;
+    min-width: 80px;
+    background: #f0f0f0 url("../images/arrow-down.png") 86% center no-repeat;
+    background-size: .8em;
+    position: relative; }
+  /* line 295, ../sass/mybb.scss */
+  .pulldown-wrap ul strong {
+    padding: 9px 12px 3px;
+    display: block; }
+  /* line 300, ../sass/mybb.scss */
+  .pulldown-wrap ul a {
+    text-decoration: none;
+    padding: 7px 12px;
+    display: block;
+    color: #333;
+    font-weight: 400; }
+    /* line 307, ../sass/mybb.scss */
+    .pulldown-wrap ul a:hover {
+      background: #ddd; }
+    /* line 311, ../sass/mybb.scss */
+    .pulldown-wrap ul a.nothing {
+      color: #999; }
+
+/* line 323, ../sass/mybb.scss */
+.pulldown-wrap:hover .dropdown {
+  left: 0;
+  right: auto;
+  top: 32px;
+  width: 260px;
+  padding: 0;
+  border-top: 2px solid #c7602a;
+  border-radius: 0; }
+/* line 333, ../sass/mybb.scss */
+.pulldown-wrap:hover > a {
+  background-color: #ddd; }
+
+/* line 338, ../sass/mybb.scss */
+.lightbox {
+  position: fixed;
+  width: 800px;
+  height: 500px;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -400px;
+  z-index: 1003;
+  background: #fff;
+  border: 1px solid #333;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  padding: 12px 24px; }
+
+/* line 355, ../sass/mybb.scss */
+.compose-msg-box h2 {
+  margin: 9px 0 18px;
+  padding: 0; }
+/* line 361, ../sass/mybb.scss */
+.compose-msg-box input[type="text"],
+.compose-msg-box textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #999;
+  margin: 0 0 12px; }
+/* line 368, ../sass/mybb.scss */
+.compose-msg-box input[type="text"] {
+  font-size: 1.2em;
+  padding: 6px 3px; }
+/* line 373, ../sass/mybb.scss */
+.compose-msg-box select {
+  margin-bottom: 12px; }
+/* line 377, ../sass/mybb.scss */
+.compose-msg-box textarea {
+  height: 280px; }
+
+/* line 382, ../sass/mybb.scss */
+.compose-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; }

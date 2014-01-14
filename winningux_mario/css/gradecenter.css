@@ -1,0 +1,1482 @@
+/*BEGIN COLOR PALETTE*/
+/*END COLOR PALETTE*/
+/* BEGIN THEME DEFAULTS TWEAKS */
+/* line 18, ../sass/gradecenter.scss */
+.mainButton.settings a span.gear {
+  background: url("../images/small-gear.png") center center no-repeat transparent !important;
+  padding-left: 10px;
+  margin-left: -10px; }
+
+/* line 24, ../sass/gradecenter.scss */
+a.cmimg img {
+  display: none !important; }
+
+/* line 28, ../sass/gradecenter.scss */
+#pageTitleDiv {
+  background: #525252;
+  font-size: 80%; }
+
+/* line 33, ../sass/gradecenter.scss */
+#pageTitleHeader {
+  color: #fff;
+  text-shadow: none; }
+
+/* END THEME DEFAULTS TWEAKS */
+/* line 42, ../sass/gradecenter.scss */
+.assignmentColorLight {
+  background-color: #e0fadc; }
+
+/* line 43, ../sass/gradecenter.scss */
+.assessmentColorLight {
+  background-color: #f2f8fa; }
+
+/* line 44, ../sass/gradecenter.scss */
+.blogColorLight {
+  background-color: #fff6eb; }
+
+/* line 47, ../sass/gradecenter.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 53, ../sass/gradecenter.scss */
+.radius2, .button, .viewChanger a, .controlButton, .manageItems, .setupWiz, .batchButton {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+
+/* line 59, ../sass/gradecenter.scss */
+.radius2-flat-right, .filterDropDown {
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px; }
+
+/* line 65, ../sass/gradecenter.scss */
+.radius2-flat-left, .controlButton.filterSettings {
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 20 2px 2px 0;
+  border-radius: 0 2px 2px 0; }
+
+/* line 71, ../sass/gradecenter.scss */
+.insetShadow {
+  -webkit-box-shadow: inset -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -1px 1px 1px 0px rgba(0, 0, 0, 0.1); }
+
+/* line 76, ../sass/gradecenter.scss */
+.dropShadow, .button, .itemRow .introspect .button.needsGrading:hover, .dropMenu, .gradeNowDropMenu, #allOptionsMenu {
+  /*
+  	-webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5) ;
+  	-moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5) ;
+  	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5) ;
+  */ }
+
+/* line 83, ../sass/gradecenter.scss */
+.noShadow, .itemRow .introspect .button.needsGrading, .itemRow .introspect .button.needsGrading:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+/* line 89, ../sass/gradecenter.scss */
+.animate, .itemRow .introspect .button.needsGrading:hover {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease; }
+
+/* line 94, ../sass/gradecenter.scss */
+.noAnimate, .itemRow .introspect .button.needsGrading:active {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none; }
+
+/* line 101, ../sass/gradecenter.scss */
+.noTextSelect, .filterDropDown .filterSelect, .gridWrapper .grid .column .cell .cellBtn, .batchButton {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 110, ../sass/gradecenter.scss */
+.cellHover {
+  background-color: #f7f7f7; }
+
+/* line 111, ../sass/gradecenter.scss */
+.reversed, .reversed:hover {
+  background-color: #525252 !important;
+  color: #fff; }
+
+/* Filter Bar */
+/* line 114, ../sass/gradecenter.scss */
+.filterBar {
+  width: 100%;
+  background: #eee;
+  padding: 0;
+  position: relative; }
+  /* line 120, ../sass/gradecenter.scss */
+  .filterBar .filterLabels {
+    width: 607px;
+    height: 18px;
+    line-height: 18px; }
+    /* line 124, ../sass/gradecenter.scss */
+    .filterBar .filterLabels div {
+      display: inline-block;
+      font-size: 11px;
+      color: #666; }
+    /* line 127, ../sass/gradecenter.scss */
+    .filterBar .filterLabels .f2 {
+      margin-left: 170px; }
+    /* line 128, ../sass/gradecenter.scss */
+    .filterBar .filterLabels .f3 {
+      margin-left: 65px; }
+    /* line 129, ../sass/gradecenter.scss */
+    .filterBar .filterLabels .f4 {
+      margin-left: 70px; }
+    /* line 130, ../sass/gradecenter.scss */
+    .filterBar .filterLabels .f5 {
+      margin-left: 50px; }
+
+/* line 135, ../sass/gradecenter.scss */
+.itemRow .button {
+  margin: 14px 14px 0 0; }
+
+/* line 139, ../sass/gradecenter.scss */
+.button {
+  display: inline-block;
+  position: relative; }
+  /* line 145, ../sass/gradecenter.scss */
+  .button.withDrop {
+    padding-right: 30px; }
+  /* line 149, ../sass/gradecenter.scss */
+  .button .clicker {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f7f7f7;
+    padding: 0 10px 0 32px;
+    text-transform: uppercase;
+    font-size: 11px;
+    overflow: hidden; }
+    /* line 157, ../sass/gradecenter.scss */
+    .button .clicker:hover {
+      background-color: #eee;
+      cursor: pointer; }
+    /* line 162, ../sass/gradecenter.scss */
+    .button .clicker.ng {
+      background-image: url("../images/needsGrading-icon.png");
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      -webkit-background-size: 14px 14px;
+      background-size: 14px 14px; }
+    /* line 171, ../sass/gradecenter.scss */
+    .button .clicker .cnt {
+      font-weight: 800;
+      margin-left: 8px; }
+  /* line 180, ../sass/gradecenter.scss */
+  .button .dropBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #f7f7f7;
+    background-image: url("../images/arrow-down.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: 9px 5px;
+    background-size: 9px 5px;
+    width: 30px;
+    height: 100%;
+    display: block;
+    border-left: 1px solid #dddddd; }
+    /* line 194, ../sass/gradecenter.scss */
+    .button .dropBtn:hover {
+      background-color: #eaeaea;
+      cursor: pointer; }
+    /* line 199, ../sass/gradecenter.scss */
+    .button .dropBtn.reversed {
+      background-image: url("../images/arrow-down-white.png"); }
+
+/* line 207, ../sass/gradecenter.scss */
+.itemRow .allGraded {
+  background-image: url("../images/completed-icon.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  -webkit-background-size: 14px 14px;
+  background-size: 14px 14px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  padding-left: 30px;
+  margin: 14px 14px 0 0;
+  float: right;
+  display: inline-block;
+  line-height: 30px; }
+
+/*Filter dropdown*/
+/* line 227, ../sass/gradecenter.scss */
+.filterDropDown {
+  float: left;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #dad8d0;
+  background-color: #f7f7f7; }
+  /* line 235, ../sass/gradecenter.scss */
+  .filterDropDown:hover {
+    background-color: #fff; }
+  /* line 239, ../sass/gradecenter.scss */
+  .filterDropDown .favoriteBtn {
+    width: 30px;
+    height: 30px;
+    float: left;
+    display: block;
+    background: url("../images/star-icon.png") no-repeat center center transparent;
+    background-size: 13px 13px;
+    -webkit-background-size: 13px 13px;
+    position: relative;
+    top: -2px;
+    z-index: 8; }
+    /* line 250, ../sass/gradecenter.scss */
+    .filterDropDown .favoriteBtn:hover {
+      background: url("../images/star-icon-yellow.png") no-repeat center center transparent;
+      -webkit-background-size: 13px 13px;
+      background-size: 13px 13px;
+      cursor: pointer; }
+  /* line 257, ../sass/gradecenter.scss */
+  .filterDropDown .filterSelect {
+    width: 160px;
+    display: block;
+    position: relative;
+    cursor: default; }
+    /* line 263, ../sass/gradecenter.scss */
+    .filterDropDown .filterSelect:after {
+      content: "";
+      background-color: transparent;
+      background-image: url("../images/arrow-down.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: 9px 5px;
+      background-size: 9px 5px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 30px; }
+
+/* line 290, ../sass/gradecenter.scss */
+.viewChanger {
+  float: left;
+  vertical-align: middle; }
+  /* line 294, ../sass/gradecenter.scss */
+  .viewChanger a:first-child {
+    border-right: none;
+    border-radius: 2px 0 0 2px; }
+  /* line 298, ../sass/gradecenter.scss */
+  .viewChanger a:nth-child(2) {
+    border-radius: 0 2px 2px 0; }
+  /* line 301, ../sass/gradecenter.scss */
+  .viewChanger a {
+    float: left;
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: 1px solid #dddddd;
+    background-color: #f7f7f7;
+    background-position: center center;
+    background-size: 14px 11px;
+    -webkit-background-size: 14px 11px;
+    background-repeat: no-repeat; }
+    /* line 314, ../sass/gradecenter.scss */
+    .viewChanger a:hover {
+      background-color: #eaeaea; }
+    /* line 317, ../sass/gradecenter.scss */
+    .viewChanger a.gridView {
+      background-image: url("../images/gradebook-view.png"); }
+    /* line 320, ../sass/gradecenter.scss */
+    .viewChanger a.itemView {
+      background-image: url("../images/item-view.png"); }
+    /* line 323, ../sass/gradecenter.scss */
+    .viewChanger a.current {
+      background-color: #ddd;
+      border: 1px solid #ccc; }
+
+/* line 331, ../sass/gradecenter.scss */
+.controlButton {
+  float: left;
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border: 1px solid #dddddd;
+  background-color: #f7f7f7;
+  background-position: center center;
+  background-size: 12px 12px;
+  -webkit-background-size: 12px 12px;
+  background-repeat: no-repeat; }
+  /* line 344, ../sass/gradecenter.scss */
+  .controlButton:hover {
+    background-color: #fff;
+    cursor: pointer; }
+  /* line 349, ../sass/gradecenter.scss */
+  .controlButton.filterSettings {
+    border-left: none;
+    background-image: url("../images/ellipsis-icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: 11px 2px;
+    background-size: 11px 2px; }
+  /* line 358, ../sass/gradecenter.scss */
+  .controlButton.settings {
+    background-image: url("../images/gear-icon.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    -webkit-background-size: 12px 12px;
+    background-size: 12px 12px;
+    position: relative;
+    padding-right: 50px; }
+    /* line 366, ../sass/gradecenter.scss */
+    .controlButton.settings:after {
+      content: "";
+      background-color: transparent;
+      background-image: url("../images/arrow-down.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: 9px 5px;
+      background-size: 9px 5px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 30px; }
+
+/* line 385, ../sass/gradecenter.scss */
+.filterConfig {
+  display: inline-block;
+  height: 30px;
+  overflow: hidden; }
+  /* line 389, ../sass/gradecenter.scss */
+  .filterConfig .filter {
+    float: left;
+    display: block;
+    padding: 0 23px 0 14px;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    border-left: none;
+    position: relative;
+    background-color: #f7f7f7; }
+    /* line 400, ../sass/gradecenter.scss */
+    .filterConfig .filter:hover {
+      cursor: default;
+      background-color: #fff; }
+    /* line 405, ../sass/gradecenter.scss */
+    .filterConfig .filter:after {
+      content: "";
+      background-color: transparent;
+      background-image: url("../images/updown-arrow.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: 8px 10px;
+      background-size: 8px 10px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 30px; }
+
+/* line 422, ../sass/gradecenter.scss */
+.pageControls {
+  display: inline-block;
+  vertical-align: middle; }
+
+/*Grid Table */
+/* line 429, ../sass/gradecenter.scss */
+.gridWrapper {
+  position: relative;
+  width: 100%; }
+  /* line 435, ../sass/gradecenter.scss */
+  .gridWrapper .grid {
+    float: left; }
+    /* line 440, ../sass/gradecenter.scss */
+    .gridWrapper .grid.prev, .gridWrapper .grid.next {
+      width: 28px;
+      background-color: #dedede; }
+      /* line 443, ../sass/gradecenter.scss */
+      .gridWrapper .grid.prev a, .gridWrapper .grid.next a {
+        display: block;
+        -webkit-background-size: 10px 18px;
+        background-size: 10px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 28px;
+        height: 45px;
+        overflow: hidden;
+        text-indent: -999px;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        -moz-opacity: .5;
+        -o-opacity: .5;
+        -khtml-opacity: .5;
+        opacity: .5; }
+        /* line 458, ../sass/gradecenter.scss */
+        .gridWrapper .grid.prev a:hover, .gridWrapper .grid.next a:hover {
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+          -moz-opacity: 1;
+          -o-opacity: 1;
+          -khtml-opacity: 1;
+          opacity: 1; }
+      /* line 466, ../sass/gradecenter.scss */
+      .gridWrapper .grid.prev.prev a, .gridWrapper .grid.next.prev a {
+        background-image: url("../images/arrow-left.png"); }
+      /* line 467, ../sass/gradecenter.scss */
+      .gridWrapper .grid.prev.next a, .gridWrapper .grid.next.next a {
+        background-image: url("../images/arrow-right.png"); }
+    /* line 469, ../sass/gradecenter.scss */
+    .gridWrapper .grid.prev {
+      margin: 0 0 0 0px; }
+    /* line 470, ../sass/gradecenter.scss */
+    .gridWrapper .grid.next {
+      margin-right: -20px; }
+    /* line 473, ../sass/gradecenter.scss */
+    .gridWrapper .grid.users {
+      float: left; }
+      /* line 476, ../sass/gradecenter.scss */
+      .gridWrapper .grid.users .column .cell {
+        text-align: left;
+        width: 220px;
+        padding: 0;
+        background-color: #f7f7f7;
+        position: relative; }
+      /* line 484, ../sass/gradecenter.scss */
+      .gridWrapper .grid.users input {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 3; }
+      /* line 490, ../sass/gradecenter.scss */
+      .gridWrapper .grid.users .userAvatar {
+        height: 32px;
+        width: 32px;
+        float: left;
+        margin: 3px 3px 0 24px; }
+      /* line 496, ../sass/gradecenter.scss */
+      .gridWrapper .grid.users .userName {
+        height: 40px;
+        line-height: 40px;
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        padding: 0 0 0 10px;
+        white-space: nowrap; }
+    /* line 508, ../sass/gradecenter.scss */
+    .gridWrapper .grid.items {
+      position: relative;
+      overflow-x: auto;
+      overflow-y: hidden;
+      border: 1px solid #dddddd;
+      border-bottom: none;
+      width: 930px;
+      /*calculated via js*/ }
+      /* line 516, ../sass/gradecenter.scss */
+      .gridWrapper .grid.items .columnWrapper {
+        position: absolute;
+        width: 1762px;
+        background: #fff; }
+    /* line 524, ../sass/gradecenter.scss */
+    .gridWrapper .grid .column {
+      float: left; }
+      /* line 526, ../sass/gradecenter.scss */
+      .gridWrapper .grid .column:last-child .cell {
+        border-right: 1px solid #dddddd; }
+      /* line 529, ../sass/gradecenter.scss */
+      .gridWrapper .grid .column .header {
+        background-color: #f7f7f7; }
+      /* line 530, ../sass/gradecenter.scss */
+      .gridWrapper .grid .column.assignment .header {
+        background-color: #e0fadc; }
+        /* line 532, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column.assignment .header .progressBarMini {
+          background-color: #89eb7a; }
+        /* line 535, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column.assignment .header:hover .contextualMenuBtn {
+          background-color: #c4f5bd; }
+          /* line 537, ../sass/gradecenter.scss */
+          .gridWrapper .grid .column.assignment .header:hover .contextualMenuBtn:hover {
+            background-color: #85ea76; }
+      /* line 542, ../sass/gradecenter.scss */
+      .gridWrapper .grid .column.assessment .header {
+        background-color: #f2f8fa; }
+        /* line 544, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column.assessment .header .progressBarMini {
+          background-color: #a0ccdc; }
+        /* line 547, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column.assessment .header:hover .contextualMenuBtn {
+          background-color: #fff6eb; }
+          /* line 549, ../sass/gradecenter.scss */
+          .gridWrapper .grid .column.assessment .header:hover .contextualMenuBtn:hover {
+            background-color: #9ccadb; }
+      /* line 554, ../sass/gradecenter.scss */
+      .gridWrapper .grid .column.blog .header {
+        background-color: #fff6eb; }
+        /* line 555, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column.blog .header .progressBarMini {
+          background-color: #ffc67b; }
+        /* line 558, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column.blog .header:hover .contextualMenuBtn {
+          background-color: #ffe7c8; }
+          /* line 560, ../sass/gradecenter.scss */
+          .gridWrapper .grid .column.blog .header:hover .contextualMenuBtn:hover {
+            background-color: #ffc476; }
+      /* line 566, ../sass/gradecenter.scss */
+      .gridWrapper .grid .column .cell {
+        text-align: center;
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+        border-left: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        position: relative;
+        /*Cell Btn (Contextuel Menu Neue)*/ }
+        /* line 575, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column .cell.header {
+          height: 45px;
+          line-height: 40px;
+          font-weight: bold;
+          position: relative;
+          z-index: 10; }
+          /* line 581, ../sass/gradecenter.scss */
+          .gridWrapper .grid .column .cell.header:hover {
+            background-image: url("../images/move-icon.png");
+            background-position: 5px center;
+            background-repeat: no-repeat;
+            -webkit-background-size: 14px 14px;
+            background-size: 14px 14px; }
+        /* line 589, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column .cell.batchActions {
+          border-top: 1px solid #dddddd;
+          height: 45px; }
+          /* line 592, ../sass/gradecenter.scss */
+          .gridWrapper .grid .column .cell.batchActions .batchDropdown {
+            margin-left: 38px; }
+        /* line 597, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column .cell .cellBtn {
+          position: relative;
+          padding: 0 15px;
+          height: 40px;
+          text-overflow: ellipsis;
+          cursor: default;
+          white-space: nowrap;
+          width: 100%;
+          overflow: hidden;
+          display: inline-block; }
+          /* line 608, ../sass/gradecenter.scss */
+          .gridWrapper .grid .column .cell .cellBtn:hover {
+            cursor: pointer; }
+            /* line 610, ../sass/gradecenter.scss */
+            .gridWrapper .grid .column .cell .cellBtn:hover:after {
+              display: block; }
+          /* line 614, ../sass/gradecenter.scss */
+          .gridWrapper .grid .column .cell .cellBtn:after {
+            display: none;
+            content: "";
+            background-color: transparent;
+            background-image: url("../images/arrow-down.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: 9px 5px;
+            background-size: 9px 5px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20px;
+            height: 39px; }
+          /* line 629, ../sass/gradecenter.scss */
+          .gridWrapper .grid .column .cell .cellBtn.reversed:after {
+            background-image: url("../images/arrow-down-white.png"); }
+        /* line 634, ../sass/gradecenter.scss */
+        .gridWrapper .grid .column .cell #studentDropInfo {
+          width: 100%;
+          position: absolute;
+          z-index: 30;
+          background: #525252;
+          top: 40px;
+          padding-left: 43px; }
+          /* line 641, ../sass/gradecenter.scss */
+          .gridWrapper .grid .column .cell #studentDropInfo ul {
+            padding: 5px 0; }
+            /* line 643, ../sass/gradecenter.scss */
+            .gridWrapper .grid .column .cell #studentDropInfo ul li {
+              height: 22px;
+              line-height: 22px;
+              font-weight: normal;
+              text-align: left;
+              padding: 0 10px; }
+              /* line 649, ../sass/gradecenter.scss */
+              .gridWrapper .grid .column .cell #studentDropInfo ul li a {
+                color: #eee; }
+                /* line 650, ../sass/gradecenter.scss */
+                .gridWrapper .grid .column .cell #studentDropInfo ul li a:hover {
+                  text-decoration: underline; }
+
+/* line 666, ../sass/gradecenter.scss */
+.introspect .gradeField {
+  margin-top: 5px; }
+
+/* line 667, ../sass/gradecenter.scss */
+.users .cellBtn:hover {
+  background-color: #eaeaea; }
+
+/* line 671, ../sass/gradecenter.scss */
+.gradeField,
+input.gradeField {
+  width: 60px;
+  height: 20px;
+  margin-top: 10px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-weight: 600; }
+  /* line 679, ../sass/gradecenter.scss */
+  .gradeField.needsGrading,
+  input.gradeField.needsGrading {
+    background-image: url("../images/needs-grading.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center center;
+    -webkit-background-size: 14px 14px;
+    background-size: 14px 14px; }
+
+/* line 688, ../sass/gradecenter.scss */
+.gradeDropInfo {
+  background-color: #525252;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  left: 0;
+  top: 40px;
+  border-top: 1px solid #dddddd; }
+  /* line 696, ../sass/gradecenter.scss */
+  .gradeDropInfo ul {
+    padding: 5px 10px; }
+    /* line 698, ../sass/gradecenter.scss */
+    .gradeDropInfo ul li {
+      height: 22px;
+      line-height: 22px;
+      font-weight: normal;
+      text-align: center;
+      padding: 0 10px; }
+      /* line 704, ../sass/gradecenter.scss */
+      .gradeDropInfo ul li a {
+        color: #eee; }
+        /* line 705, ../sass/gradecenter.scss */
+        .gradeDropInfo ul li a:hover {
+          text-decoration: underline; }
+
+/* line 713, ../sass/gradecenter.scss */
+.progressBarMini {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #999;
+  height: 2px;
+  z-index: 9; }
+  /* line 721, ../sass/gradecenter.scss */
+  .progressBarMini.p0 {
+    right: 100%; }
+  /* line 722, ../sass/gradecenter.scss */
+  .progressBarMini.p25 {
+    right: 75%; }
+  /* line 723, ../sass/gradecenter.scss */
+  .progressBarMini.p50 {
+    right: 50%; }
+  /* line 724, ../sass/gradecenter.scss */
+  .progressBarMini.p75 {
+    right: 25%; }
+  /* line 725, ../sass/gradecenter.scss */
+  .progressBarMini.p100 {
+    right: 0%; }
+
+/* line 728, ../sass/gradecenter.scss */
+.itemRow {
+  width: 100%;
+  min-height: 70px;
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
+  position: relative;
+  border: 1px solid #dddddd; }
+  /* line 738, ../sass/gradecenter.scss */
+  .itemRow.assignment {
+    background-color: #e0fadc; }
+    /* line 740, ../sass/gradecenter.scss */
+    .itemRow.assignment .progressBarMini {
+      background-color: #89eb7a; }
+  /* line 744, ../sass/gradecenter.scss */
+  .itemRow.assessment {
+    background-color: #f2f8fa; }
+    /* line 745, ../sass/gradecenter.scss */
+    .itemRow.assessment .progressBarMini {
+      background-color: #a0ccdc; }
+  /* line 749, ../sass/gradecenter.scss */
+  .itemRow.blog {
+    background-color: #fff6eb; }
+    /* line 750, ../sass/gradecenter.scss */
+    .itemRow.blog .progressBarMini {
+      background-color: #ffc67b; }
+  /* line 754, ../sass/gradecenter.scss */
+  .itemRow .submittedStatus {
+    margin: 20px 0 0 25px;
+    float: left;
+    padding-left: 25px;
+    background: url("../images/users-icon.png") no-repeat left center transparent;
+    -webkit-background-size: 16px 12px;
+    background-size: 16px 12px;
+    text-transform: uppercase; }
+    /* line 763, ../sass/gradecenter.scss */
+    .itemRow .submittedStatus span {
+      font-weight: bold; }
+  /* line 767, ../sass/gradecenter.scss */
+  .itemRow .title {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    left: 50%;
+    font-weight: bold;
+    top: 10px;
+    margin-left: -25%;
+    text-align: center;
+    font-size: 1.1em; }
+  /* line 778, ../sass/gradecenter.scss */
+  .itemRow .subInfo {
+    position: absolute;
+    color: #888;
+    text-align: center;
+    z-index: 1;
+    width: 50%;
+    left: 50%;
+    top: 30px;
+    margin-left: -25%; }
+  /* line 788, ../sass/gradecenter.scss */
+  .itemRow .button {
+    float: right; }
+  /* line 791, ../sass/gradecenter.scss */
+  .itemRow:hover .expCollBtn {
+    display: block; }
+  /* line 794, ../sass/gradecenter.scss */
+  .itemRow .expCollBtn {
+    width: 30px;
+    height: 12px;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    margin-left: -15px;
+    border: 1px solid #ccc;
+    /*fallback*/
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 9; }
+    /* line 804, ../sass/gradecenter.scss */
+    .itemRow .expCollBtn:hover {
+      background-color: #eee;
+      /*fallback*/
+      background-color: rgba(100, 100, 100, 0.1); }
+    /* line 808, ../sass/gradecenter.scss */
+    .itemRow .expCollBtn span {
+      width: 0;
+      height: 0;
+      border-left: 4px solid  transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid #000;
+      display: block;
+      margin: 3px 0 0 10px; }
+    /* line 817, ../sass/gradecenter.scss */
+    .itemRow .expCollBtn.arrowUp {
+      border: 1px solid #dddddd;
+      bottom: -12px;
+      display: block !important; }
+    /* line 822, ../sass/gradecenter.scss */
+    .itemRow .expCollBtn.arrowUp span {
+      border-left: 4px solid  transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 5px solid #000;
+      border-top: none;
+      display: block;
+      margin-top: 2px; }
+  /* line 832, ../sass/gradecenter.scss */
+  .itemRow .introspect {
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+    margin-top: 60px;
+    border-top: 1px solid #dddddd; }
+    /* line 840, ../sass/gradecenter.scss */
+    .itemRow .introspect .row {
+      width: 100%; }
+      /* line 842, ../sass/gradecenter.scss */
+      .itemRow .introspect .row .cell {
+        height: 40px;
+        width: 25%;
+        margin-right: -1px;
+        margin-top: -1px;
+        line-height: 30px;
+        float: left;
+        padding: 3px;
+        border-top: 1px solid #dddddd;
+        border-left: none;
+        text-align: center; }
+        /* line 854, ../sass/gradecenter.scss */
+        .itemRow .introspect .row .cell.grade {
+          font-size: 13px;
+          font-weight: bold; }
+        /* line 858, ../sass/gradecenter.scss */
+        .itemRow .introspect .row .cell.user {
+          text-align: left;
+          text-indent: 10px; }
+        /* line 862, ../sass/gradecenter.scss */
+        .itemRow .introspect .row .cell .userAvatar {
+          width: 20px;
+          height: 20px;
+          float: left;
+          margin: 5px 0 0 18px; }
+    /* line 871, ../sass/gradecenter.scss */
+    .itemRow .introspect .button {
+      width: 120px;
+      font-weight: normal;
+      float: none;
+      /*fancy needs grading btn*/ }
+      /* line 876, ../sass/gradecenter.scss */
+      .itemRow .introspect .button.needsGrading {
+        background-image: url("../images/needsGrading-icon.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: 14px 14px;
+        background-size: 14px 14px;
+        padding-left: 20px;
+        text-indent: 120px;
+        border: 1px solid #dddddd;
+        background-color: transparent !important;
+        border: none !important;
+        white-space: nowrap; }
+        /* line 889, ../sass/gradecenter.scss */
+        .itemRow .introspect .button.needsGrading:hover {
+          background-color: #eee !important;
+          text-indent: 10px;
+          background-position: 13px center; }
+
+/* line 909, ../sass/gradecenter.scss */
+.dropMenu {
+  background-color: #f7f7f7;
+  overflow: hidden; }
+  /* line 914, ../sass/gradecenter.scss */
+  .dropMenu ul {
+    padding: 5px 0; }
+  /* line 915, ../sass/gradecenter.scss */
+  .dropMenu li {
+    height: 22px;
+    line-height: 22px;
+    font-weight: normal;
+    text-align: left;
+    padding: 0 10px; }
+    /* line 921, ../sass/gradecenter.scss */
+    .dropMenu li a:hover {
+      text-decoration: underline; }
+
+/* line 930, ../sass/gradecenter.scss */
+.welcomeOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: black;
+  /*fallback*/
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.8), black);
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, rgba(0, 0, 0, 0.8), black);
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, rgba(0, 0, 0, 0.8), black); }
+  /* line 950, ../sass/gradecenter.scss */
+  .welcomeOverlay .overlayContent {
+    font-family: Lucida Grande, arial, sans; }
+    /* line 952, ../sass/gradecenter.scss */
+    .welcomeOverlay .overlayContent .header {
+      margin: 0 auto;
+      padding: 40px 0 30px 0;
+      width: 800px;
+      display: block;
+      border-bottom: 1px solid #dddddd; }
+      /* line 958, ../sass/gradecenter.scss */
+      .welcomeOverlay .overlayContent .header h1 {
+        font-family: Georgia, serif;
+        font-size: 32px;
+        color: #fff;
+        font-weight: normal;
+        margin: 0;
+        display: block;
+        text-align: center; }
+      /* line 968, ../sass/gradecenter.scss */
+      .welcomeOverlay .overlayContent .header p {
+        font-weight: normal;
+        color: #ddd;
+        font-size: 13px;
+        line-height: 140%;
+        width: 500px;
+        text-align: center;
+        display: block;
+        margin: 10px auto; }
+    /* line 979, ../sass/gradecenter.scss */
+    .welcomeOverlay .overlayContent .contents {
+      margin: 0 auto;
+      padding: 40px 0;
+      width: 800px;
+      display: block; }
+      /* line 985, ../sass/gradecenter.scss */
+      .welcomeOverlay .overlayContent .contents h2 {
+        font-size: 20px;
+        color: #fff;
+        display: block; }
+      /* line 990, ../sass/gradecenter.scss */
+      .welcomeOverlay .overlayContent .contents ul {
+        float: left;
+        height: 150px;
+        width: 500px;
+        font-size: 13px;
+        color: #ddd;
+        list-style: none; }
+        /* line 997, ../sass/gradecenter.scss */
+        .welcomeOverlay .overlayContent .contents ul li {
+          margin: 7px 0;
+          background-image: url("../images/checkMark.png");
+          background-repeat: no-repeat;
+          background-size: 14px 10px;
+          -moz-background-size: 14px 10px;
+          background-position: left center;
+          padding-left: 30px; }
+    /* line 1010, ../sass/gradecenter.scss */
+    .welcomeOverlay .overlayContent .buttons {
+      display: block;
+      margin-left: 70px;
+      width: 800px;
+      text-align: center; }
+      /* line 1015, ../sass/gradecenter.scss */
+      .welcomeOverlay .overlayContent .buttons a {
+        margin: 4px; }
+      /* line 1020, ../sass/gradecenter.scss */
+      .welcomeOverlay .overlayContent .buttons .tourBtn {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+        -moz-opacity: .9;
+        -o-opacity: .9;
+        -khtml-opacity: .9;
+        opacity: .9;
+        position: relative;
+        display: inline-block;
+        width: 230px;
+        height: 36px;
+        color: #fff;
+        line-height: 36px;
+        background: -moz-linear-gradient(top, #207cca 0%, #1e5799 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #207cca), color-stop(100%, #1e5799));
+        background: -webkit-linear-gradient(top, #207cca 0%, #1e5799 100%);
+        background: -o-linear-gradient(top, #207cca 0%, #1e5799 100%);
+        background: -ms-linear-gradient(top, #207cca 0%, #1e5799 100%);
+        background: linear-gradient(to bottom, #207cca 0%, #1e5799 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#207cca', endColorstr='#1e5799',GradientType=0 ); }
+        /* line 1039, ../sass/gradecenter.scss */
+        .welcomeOverlay .overlayContent .buttons .tourBtn:before {
+          content: "";
+          background-image: url("../images/tour-icon.png");
+          background-repeat: no-repeat;
+          background-size: 17px 17px;
+          -moz-background-size: 17px 17px;
+          background-position: center center;
+          position: absolute;
+          left: 8px;
+          top: 8px;
+          height: 20px;
+          width: 20px; }
+        /* line 1052, ../sass/gradecenter.scss */
+        .welcomeOverlay .overlayContent .buttons .tourBtn:hover {
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+          -moz-opacity: 1;
+          -o-opacity: 1;
+          -khtml-opacity: 1;
+          opacity: 1; }
+      /* line 1060, ../sass/gradecenter.scss */
+      .welcomeOverlay .overlayContent .buttons .setupBtn {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+        -moz-opacity: .9;
+        -o-opacity: .9;
+        -khtml-opacity: .9;
+        opacity: .9;
+        position: relative;
+        display: inline-block;
+        width: 230px;
+        height: 36px;
+        color: #fff;
+        line-height: 36px;
+        background: #00b700;
+        background: -moz-linear-gradient(top, #00b700 0%, #009b07 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00b700), color-stop(100%, #009b07));
+        background: -webkit-linear-gradient(top, #00b700 0%, #009b07 100%);
+        background: -o-linear-gradient(top, #00b700 0%, #009b07 100%);
+        background: -ms-linear-gradient(top, #00b700 0%, #009b07 100%);
+        background: linear-gradient(to bottom, #00b700 0%, #009b07 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b700', endColorstr='#009b07',GradientType=0 ); }
+        /* line 1080, ../sass/gradecenter.scss */
+        .welcomeOverlay .overlayContent .buttons .setupBtn:after {
+          content: "";
+          background-image: url("../images/arrow-right-white.png");
+          background-repeat: no-repeat;
+          background-size: 5px 9px;
+          -moz-background-size: 5px 9px;
+          background-position: 10px center;
+          position: absolute;
+          right: 10px;
+          top: 8px;
+          width: 20px;
+          height: 20px; }
+        /* line 1093, ../sass/gradecenter.scss */
+        .welcomeOverlay .overlayContent .buttons .setupBtn:before {
+          content: "";
+          background-image: url("../images/gear-icon-white.png");
+          background-repeat: no-repeat;
+          background-size: 17px 17px;
+          -moz-background-size: 17px 17px;
+          background-position: center center;
+          position: absolute;
+          left: 8px;
+          top: 8px;
+          width: 20px;
+          height: 20px; }
+        /* line 1106, ../sass/gradecenter.scss */
+        .welcomeOverlay .overlayContent .buttons .setupBtn:hover {
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+          -moz-opacity: 1;
+          -o-opacity: 1;
+          -khtml-opacity: 1;
+          opacity: 1; }
+      /* line 1117, ../sass/gradecenter.scss */
+      .welcomeOverlay .overlayContent .buttons .laterBtn {
+        background-color: rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        border: 1px solid #222;
+        width: 230px;
+        height: 36px;
+        line-height: 36px;
+        color: #fff; }
+        /* line 1125, ../sass/gradecenter.scss */
+        .welcomeOverlay .overlayContent .buttons .laterBtn:hover {
+          text-decoration: underline; }
+
+/* line 1135, ../sass/gradecenter.scss */
+#startButton {
+  position: relative;
+  padding-left: 35px; }
+  /* line 1138, ../sass/gradecenter.scss */
+  #startButton:before {
+    content: "";
+    background-image: url("../images/tour-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px; }
+  /* line 1150, ../sass/gradecenter.scss */
+  #startButton:hover {
+    background: #207cca;
+    background: -moz-linear-gradient(top, #207cca 0%, #1e5799 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #207cca), color-stop(100%, #1e5799));
+    background: -webkit-linear-gradient(top, #207cca 0%, #1e5799 100%);
+    background: -o-linear-gradient(top, #207cca 0%, #1e5799 100%);
+    background: -ms-linear-gradient(top, #207cca 0%, #1e5799 100%);
+    background: linear-gradient(to bottom, #207cca 0%, #1e5799 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#207cca', endColorstr='#1e5799',GradientType=0 ); }
+
+/* line 1163, ../sass/gradecenter.scss */
+#settingsBtn {
+  position: relative;
+  padding-left: 35px; }
+  /* line 1166, ../sass/gradecenter.scss */
+  #settingsBtn:before {
+    content: "";
+    background-image: url("../images/gear-icon-white.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px; }
+  /* line 1178, ../sass/gradecenter.scss */
+  #settingsBtn:hover {
+    background: #00b700;
+    background: -moz-linear-gradient(top, #00b700 0%, #009b07 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00b700), color-stop(100%, #009b07));
+    background: -webkit-linear-gradient(top, #00b700 0%, #009b07 100%);
+    background: -o-linear-gradient(top, #00b700 0%, #009b07 100%);
+    background: -ms-linear-gradient(top, #00b700 0%, #009b07 100%);
+    background: linear-gradient(to bottom, #00b700 0%, #009b07 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b700', endColorstr='#009b07',GradientType=0 ); }
+
+/* line 1194, ../sass/gradecenter.scss */
+#accordion1 .accordion-toggle, #accordion2 .accordion-toggle {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px; }
+  /* line 1200, ../sass/gradecenter.scss */
+  #accordion1 .accordion-toggle:before, #accordion2 .accordion-toggle:before {
+    content: "";
+    background-color: transparent;
+    background-image: url("../images/arrow-down-white.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #525252;
+    -webkit-background-size: 9px 5px;
+    background-size: 9px 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 30px; }
+/* line 1217, ../sass/gradecenter.scss */
+#accordion1 .accordion-toggle-active, #accordion2 .accordion-toggle-active {
+  border: none;
+  font-weight: normal; }
+/* line 1221, ../sass/gradecenter.scss */
+#accordion1 .accordion-content, #accordion2 .accordion-content {
+  overflow: hidden; }
+
+/* line 1229, ../sass/gradecenter.scss */
+#accordion3 .accordion-toggle {
+  display: block;
+  width: 100%;
+  background-color: #fafafa !important;
+  line-height: 50px;
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 15px 0 0 0;
+  font-size: 110%;
+  color: #00748B;
+  padding: 0 15px;
+  border: 1px solid #dddddd; }
+  /* line 1245, ../sass/gradecenter.scss */
+  #accordion3 .accordion-toggle:hover {
+    text-decoration: underline; }
+/* line 1250, ../sass/gradecenter.scss */
+#accordion3 .accordion-toggle-active {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  color: black;
+  font-weight: 800; }
+/* line 1257, ../sass/gradecenter.scss */
+#accordion3 .accordion-content {
+  border: 1px solid #dddddd;
+  border-top: none;
+  background-color: #fafafa;
+  color: #444444;
+  overflow: hidden;
+  margin-bottom: 15px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+  /* line 1267, ../sass/gradecenter.scss */
+  #accordion3 .accordion-content div.section {
+    padding: 0 10px 10px 10px;
+    margin: 0 8px 2px 8px;
+    display: block; }
+    /* line 1271, ../sass/gradecenter.scss */
+    #accordion3 .accordion-content div.section label, #accordion3 .accordion-content div.section input {
+      margin-right: 10px; }
+    /* line 1274, ../sass/gradecenter.scss */
+    #accordion3 .accordion-content div.section .tag {
+      display: inline-block;
+      border: 1px solid #dddddd;
+      padding: 3px 6px; }
+    /* line 1279, ../sass/gradecenter.scss */
+    #accordion3 .accordion-content div.section .add {
+      display: inline-block;
+      padding: 3px 6px 3px 25px;
+      background-image: url("../images/plus-icon.png");
+      background-position: 6px center;
+      background-repeat: no-repeat;
+      -webkit-background-size: 11px 11px;
+      background-size: 11px 11px;
+      border: 1px solid #dddddd;
+      margin: 10px 0;
+      background-color: #f7f7f7; }
+      /* line 1290, ../sass/gradecenter.scss */
+      #accordion3 .accordion-content div.section .add:hover {
+        background-color: #eaeaea;
+        cursor: pointer; }
+    /* line 1296, ../sass/gradecenter.scss */
+    #accordion3 .accordion-content div.section table th {
+      background-color: #eaeaea;
+      padding: 10px; }
+    /* line 1300, ../sass/gradecenter.scss */
+    #accordion3 .accordion-content div.section table td {
+      padding: 10px;
+      border-bottom: 1px solid #dddddd; }
+
+/* line 1345, ../sass/gradecenter.scss */
+#gradableItemsTableWrapper {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1352, ../sass/gradecenter.scss */
+#gradableItemsTable {
+  width: 100%;
+  border: 1px solid #dddddd; }
+
+/* line 1357, ../sass/gradecenter.scss */
+.setupWizBG {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  /*fallback*/
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)); }
+
+/* line 1377, ../sass/gradecenter.scss */
+.manageItemsBG {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  /*fallback*/
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)); }
+
+/* line 1399, ../sass/gradecenter.scss */
+.manageItems {
+  position: fixed;
+  display: block;
+  top: 40px;
+  left: 180px;
+  right: 180px;
+  padding: 30px;
+  bottom: 40px;
+  background-color: #fff;
+  z-index: 999999;
+  -webkit-box-shadow: 0 1px 20px 1px #444444;
+  -moz-box-shadow: 0 1px 20px 1px #444444;
+  box-shadow: 0 1px 20px 1px #444444;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-width: 877px; }
+
+/* line 1418, ../sass/gradecenter.scss */
+.setupWiz {
+  position: fixed;
+  display: block;
+  top: 40px;
+  left: 180px;
+  right: 180px;
+  padding: 30px;
+  bottom: 40px;
+  background-color: #fff;
+  z-index: 999999;
+  -webkit-box-shadow: 0 1px 20px 1px #444444;
+  -moz-box-shadow: 0 1px 20px 1px #444444;
+  box-shadow: 0 1px 20px 1px #444444;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-width: 877px; }
+  /* line 1437, ../sass/gradecenter.scss */
+  .setupWiz .samaritan {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 90px;
+    width: 300px;
+    padding: 40px 30px;
+    border: 1px solid #dddddd; }
+
+/* line 1450, ../sass/gradecenter.scss */
+.batchButton {
+  position: relative;
+  height: 30px;
+  width: 150px;
+  display: block;
+  margin: 10px 0 20px 25px;
+  border: 1px solid #dddddd;
+  background-color: #f7f7f7; }
+  /* line 1460, ../sass/gradecenter.scss */
+  .batchButton .batchSelect {
+    margin-left: 10px;
+    line-height: 30px;
+    cursor: pointer; }
+    /* line 1464, ../sass/gradecenter.scss */
+    .batchButton .batchSelect:after {
+      content: '';
+      color: #f7f7f7;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 30px;
+      background: url("../images/arrow-down.png") no-repeat 6px center;
+      -webkit-background-size: 9px 5px;
+      background-size: 9px 5px; }
+  /* line 1477, ../sass/gradecenter.scss */
+  .batchButton:hover {
+    background-color: #eaeaea; }
+  /* line 1480, ../sass/gradecenter.scss */
+  .batchButton .batchOptions {
+    position: absolute;
+    z-index: 9;
+    left: -1px;
+    right: -1px;
+    top: 28px;
+    background-color: #eaeaea; }
+    /* line 1488, ../sass/gradecenter.scss */
+    .batchButton .batchOptions ul {
+      padding: 5px 0;
+      border: 1px solid #dddddd; }
+      /* line 1490, ../sass/gradecenter.scss */
+      .batchButton .batchOptions ul li {
+        height: 22px;
+        line-height: 22px;
+        font-weight: normal;
+        text-align: left;
+        padding: 0 10px; }
+        /* line 1496, ../sass/gradecenter.scss */
+        .batchButton .batchOptions ul li a:hover {
+          text-decoration: underline; }
+
+/* line 1504, ../sass/gradecenter.scss */
+#ptsPossibleLightbox {
+  width: 400px;
+  height: 140px;
+  position: fixed;
+  left: 50%;
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+  z-index: 999;
+  margin-left: -200px;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.4); }
+
+/* line 1518, ../sass/gradecenter.scss */
+.checkMark {
+  background-repeat: no-repeat;
+  -webkit-background-size: 18px 14px;
+  background-size: 18px 14px;
+  background-position: center center;
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../images/checkMark.png"); }
+  /* line 1528, ../sass/gradecenter.scss */
+  .checkMark:hover {
+    cursor: pointer; }
+
+/* line 1534, ../sass/gradecenter.scss */
+.checkMark2 {
+  background-repeat: no-repeat;
+  -webkit-background-size: 18px 14px;
+  background-size: 18px 14px;
+  background-position: center center;
+  height: 20px;
+  width: 100%;
+  text-align: center; }
+  /* line 1542, ../sass/gradecenter.scss */
+  .checkMark2:hover {
+    cursor: pointer;
+    background-image: url("../images/checkMark-hollow.png"); }
+
+/* line 1550, ../sass/gradecenter.scss */
+.gradeNowDropMenu {
+  position: absolute;
+  z-index: 90;
+  right: 0;
+  left: 0;
+  top: 30px; }
+
+/* line 1561, ../sass/gradecenter.scss */
+.pageTitleActions {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  width: auto;
+  height: 30px; }
+  /* line 1567, ../sass/gradecenter.scss */
+  .pageTitleActions a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: center center; }
+    /* line 1575, ../sass/gradecenter.scss */
+    .pageTitleActions a:hover {
+      background-color: #333; }
+    /* line 1579, ../sass/gradecenter.scss */
+    .pageTitleActions a.help {
+      background-image: url("../images/help-icon-white.png"); }
+    /* line 1582, ../sass/gradecenter.scss */
+    .pageTitleActions a.tour {
+      background-image: url("../images/tour-icon-white.png"); }
+    /* line 1585, ../sass/gradecenter.scss */
+    .pageTitleActions a.fullscr {
+      background-image: url("../images/maximizer-icon-white.png"); }
+
+/* line 1591, ../sass/gradecenter.scss */
+#allOptionsMenu {
+  position: absolute;
+  z-index: 90;
+  right: 0;
+  top: 30px;
+  background-color: #f7f7f7; }
+  /* line 1598, ../sass/gradecenter.scss */
+  #allOptionsMenu ul {
+    padding: 10px 0; }
+    /* line 1600, ../sass/gradecenter.scss */
+    #allOptionsMenu ul li {
+      height: 22px;
+      line-height: 22px;
+      font-weight: normal;
+      text-align: left;
+      padding: 0 20px; }
+      /* line 1608, ../sass/gradecenter.scss */
+      #allOptionsMenu ul li a:hover {
+        text-decoration: underline; }

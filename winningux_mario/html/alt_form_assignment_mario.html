@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html class="v15 course"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Chapter Material - Biology 101 - Blackboard Learn</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7132872/748502/css/fonts.css" />
+<link href="../css/editor/editor.css" rel="stylesheet" type="text/css">
+        <link href="../css/core.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="../css/theme.css" media="screen, projection" rel="stylesheet" type="text/css" />
+                        <link href="../css/mario.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+                        <link rel="stylesheet" href="../css/modalbox.css" type="text/css"
+media="screen" />
+
+        <link href="../css/top_nav_3.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<!--         <link href="../css/top_nav_2.css" media="screen, projection" rel="stylesheet" type="text/css" /> -->
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><!-- jquery not used-->
+
+         <script type="text/javascript" src="../js/main.js"></script>
+
+        <script type="text/javascript" src="../js/prototype1.7.1.js"></script>
+        <script type="text/javascript" src="../js/scriptaculous.js"></script>
+
+
+<script type="text/javascript" src="../js/modalbox.js"></script> <!--Modalbox plugin-->
+
+        <script type="text/javascript" src="../js/scripts-ck.js"></script>
+        <script type="text/javascript" src="../js/scripts_2-ck.js"></script>
+                <script type="text/javascript" src="../js/enquire.js"></script>
+        <script type="text/javascript" src="../js/responsive-ck.js"></script>
+
+
+<!--JS for restrictions div on/off-->
+<script>
+  function showIPAddress(chk) {
+      document.getElementById("div1").style.display = chk.checked ? "inline-block" : "none";
+  }
+</script>
+<script>
+  function showIPAddress1(chk) {
+      document.getElementById("div2").style.display = chk.checked ? "inline-block" : "none";
+  }
+</script>
+<script>
+  function showIPAddress2(chk) {
+      document.getElementById("div3").style.display = chk.checked ? "inline-block" : "none";
+  }
+</script>
+<script>
+  function showIPAddress3(chk) {
+      document.getElementById("div4").style.display = chk.checked ? "inline-block" : "none";
+  }
+</script>
+<script>
+  function showIPAddress4(chk) {
+      document.getElementById("div5").style.display = chk.checked ? "inline-block" : "none";
+  }
+</script>
+
+
+
+        
+<script type="text/javascript">
+	document.observe("dom:loaded", function() {
+	
+	function getParameterByName(name)
+	{
+	  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	  var regexS = "[\\?&]" + name + "=([^&#]*)";
+	  var regex = new RegExp(regexS);
+	  var results = regex.exec(window.location.search);
+	  if(results == null)
+	    return "";
+	  else
+	    return decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+	
+	var firstTime = getParameterByName('session');
+	
+	if (firstTime !== "editmode"){  
+	
+	
+	 	  
+
+	}else{
+	  $('status_toggle').addClassName('button-success');
+	  $('status_toggle').down('.text-primary').innerHTML="ON";
+	  $('status_toggle').down('.text-primary').childNodes[1].nodeValue=" ON";
+	$('status_toggle').down('[class*="icon"]').setAttribute('data-icon', '2');
+	$('bb_payload').addClassName('is-editable edit-controls-show');
+	$('bb_content_nav').addClassName('is-editable edit-controls-show');
+	setTimeout(function(){$('bb_payload').removeClassName('edit-controls-show').addClassName('edit-controls-hide')}, 2000);
+	setTimeout(function(){$('bb_content_nav').removeClassName('edit-controls-show').addClassName('edit-controls-hide')}, 2000); 
+	}
+});
+</script>
+
+ 
+
+
+
+
+    </head>
+    
+    
+    <body onscroll="stickHeader()">
+
+
+    
+    
+<!--  OFFSCREEN NAVIGATION    -->
+
+
+    <div class="offscreen-nav">
+	
+		<div class="panel" style="margin-top:24px; background:transparent; display: none" id="inst-links" >	
+				<ul class="nav-menu icons-stacked nav-inline">
+					<li><a href="#"> <i class="icon-building"></i> Monument U</a></li>
+					<li><a href="#"><i class="icon-book"></i> Bookstore</a></li>
+					<li><a href="#"><i class="icon-group"></i> Student Services</a></li> 
+					<li><a href="#"> <i class="icon-smile"></i> Community</a></li>    
+	
+				</ul>
+		</div>
+		
+		
+		
+		
+		<div class="menu-wrapper panel" style="max-width: 1320px; margin:0 auto; background:transparent; display:none" id="mybb-links">
+			
+		<div class="bbdoc-row">
+		  		  
+		   
+		   <div class="grid-column span-sm-6  span-3">
+		   <h4>My Organizations</h4>
+		 	<ul class="nav-panel">
+			 	<li><a href="#"><span>College of Science Faculty</span></a></li>
+			 	<li><a href="#"><span>Science Honors Program</span></a></li>
+		 	</ul>
+		   </div>
+		   <div class="grid-column span-sm-6  span-3">
+		 	 <h4>My Spaces</h4>
+		 	<ul class="nav-panel">
+			 	<li><a href="#"><span>Carlson Bio Study Group</span></a></li>
+			 	<li><a href="#"><span>Biology Majors Unite!</span></a></li>
+			 	<li><a href="#"><span>Science Tutoring</span></a></li>
+			 	<li><a href="#"><span>Science Fair Planing</span></a></li>
+			 	<li><a href="#"><span>Knit-n-Knosh</span></a></li>
+	
+		 	</ul>
+		   </div>
+		   
+		    <div class="grid-column span-sm-6  span-3">
+		     <h4>Links</h4>
+		 	<ul class="nav-panel">
+			 	<li><a href="#"><span>Tutoring Center</span></a></li>
+			 	<li><a href="#"><span>Resource Guide</span></a></li>
+			 	<li><a href="#"><span>Library Database</span></a></li>
+			 	<li><a href="#"><span>Monument Eagles Schedule</span></a></li>
+		 	</ul>
+		    </div>
+		    <div class="grid-column span-sm-6  span-3">
+		   <h4>Settings</h4>
+		   
+		 	<ul class="nav-panel">
+			 	<li><a href="#"><span>Personal Information</span></a></li>
+			 	<li><a href="#"><span>Text size</span></a></li>
+			 	<li><a href="#"><span>High contrast</span></a></li>
+		 	</ul>
+		   </div>	
+		    
+		    
+		     <div class="grid-column span-sm-12  span-12">
+		
+		   
+	
+			<ul class="nav-menu icons-stacked nav-inline mybb-list" style="text-align: center!important; margin-top:0;border-top: 1px solid rgba(0,0,0,.5);padding-top: 6px;box-shadow: 0 1px 0 0 rgba(255, 255, 255,.08) inset">
+				<li><a href="#"> <i class="icon-random"></i> Stream <span class="badge badge-count">1</span></a></li>
+				<li><a href="#"><i class="icon-envelope"></i> Messages</a></li>
+				<li><a href="#"><i class="icon-calendar"></i> Calendar <span class="badge badge-count">5</span></a></li> 
+				<li><a href="#"> <i class="icon-bell"></i> Alerts <span class="badge badge-count">3</span></a></li> 
+				<li><a href="#"> <i class="icon-smile"></i> People <span class="badge badge-count">3</span></a></li> 
+				<li><a href="#"> <i class="icon-globe"></i> Spaces</a></li> 
+				<li><a href="#"> <i class="icon-suitcase"></i> Portfolio</a></li>    
+
+			</ul>
+		
+		   </div>
+					   
+		 </div>	
+			
+			
+		</div>
+	
+</div>
+
+<!-- END OFFSCREEN NAVIGATION -->
+
+
+
+
+
+
+
+    
+    <div class="bb-box" id="bb_box">
+    
+    
+
+    
+
+    
+<div class="branding hide-mobile" id="branding">
+    <img src="../images/monument_logo_new.png">
+</div>
+    
+    
+        <div class="bb-chrome" id="bb_chrome" style="background: transparent; box-shadow: none;">
+        
+        
+        
+        
+        
+	       
+<header id="bb_chrome_header" class="clearfix bb-chrome-header" style="min-height:1px;">
+
+<div class="navs-wrapper">
+		
+	<nav class="new-global-nav">
+	
+	 <img src="../images/monument_logo_new.png" style="float: left;height:36px; margin-left: 12px;opacity:0">
+		
+	<!--
+	<div class="global-tab hide-mobile">
+			<a href="alt_top_nav_portal_2.html">My Monument 
+			</a>
+		</div>
+-->
+			
+			
+		<div class="global-tab">
+			<a href="#" id="current_user" onclick="$('mybb_links').toggleClassName('show'); this.up().toggleClassName('active');$$('html')[0].toggleClassName('show-global'); return false;">
+				<div class="avatar-wrap"><img src="../images/carlson_elizabeth.png" class="avatar"></div>
+				<span class="name-text">Beth C.</span> <span class="badge badge-count">12</span>  <i class="icon-caret-down"></i>					</a>
+		</div>
+			
+			
+		<div class="global-tab">
+			<a href="#" style="font-size: 18px;"><i class="icon-off"></i></a>
+		</div>
+	
+	
+	</nav> <!-- /.new-global-nav -->	
+	
+		
+	
+	 <div class="menu-wrapper panel mybb-links" style="max-width: 1320px; margin:0 auto;" id="mybb_links">
+			
+		<div class="bbdoc-row mybb-panel">
+		  		  
+		      <div class="grid-column span-sm-12  span-12">
+		
+		   
+	
+			<ul class="nav-menu icons-stacked nav-inline mybb-list" style="text-align: center!important; margin-top:0;border-bottom: 1px solid rgba(0,0,0,.3);padding-top: 6px;box-shadow: 0 1px 0 0 rgba(255, 255, 255,.08); padding-bottom: 12px;">
+				<li><a href="#"> <i class="icon-random"></i> Stream <span class="badge badge-count">1</span></a></li>
+				<li><a href="#"><i class="icon-envelope"></i> Messages</a></li>
+				<li><a href="#"><i class="icon-calendar"></i> Calendar <span class="badge badge-count">5</span></a></li> 
+				<li><a href="#"> <i class="icon-bell"></i> Alerts <span class="badge badge-count">3</span></a></li> 
+				<li><a href="#"> <i class="icon-smile"></i> People <span class="badge badge-count">3</span></a></li> 
+				<li><a href="#"> <i class="icon-globe"></i> Spaces</a></li> 
+			<!-- 	<li><a href="#"> <i class="icon-suitcase"></i> Portfolio</a></li> -->    
+
+			</ul>
+		
+		   </div>
+		          <div class="grid-column span-sm-6  span-2">
+		   <h4>Monument U</h4>
+		   
+		 	<ul class="nav-panel">
+			 	<li><a href="alt_top_nav_portal_3.html"><span>Monument U</span></a></li>
+			 	<li><a href="#"><span>Bookstore</span></a></li>
+			 	<li><a href="#"><span>Student Services</span></a></li>
+			 	<li><a href="#"><span>Community</span></a></li>
+		 	</ul>
+		   </div>
+		   
+		      <div class="grid-column span-sm-6  span-2">
+		 	 <h4>My Courses</h4>
+		 	<ul class="nav-panel">
+			 	<li><a href="alt_top_nav_15.html"><span>Biology 101</span></a></li>
+			 	<li><a href="#"><span>Chemistry 102</span></a></li>
+			 	<li><a href="course_first_time_intro.html"><span>Biology (Fall)</span></a></li>
+			 	<li><a href="course_path_student.html"><span>English</span></a></li>
+		 	</ul>
+		   </div>
+		   
+		      <div class="grid-column span-sm-6  span-2">
+		 	 <h4>My Tools</h4>
+		 	<ul class="nav-panel">
+			 	<li><a href="alt_top_nav_discussions_2.html"><span>Discussions</span></a></li>
+			 	<li><a href="#"><span>Surveys</span></a></li>
+			 	<li><a href="#"><span>Portfolios</span></a></li>
+			 	
+	
+		 	</ul>
+		   </div>
+		   
+		    <div class="grid-column span-sm-6  span-2">
+		   <h4>My Organizations</h4>
+		 	<ul class="nav-panel">
+			 	<li><a href="#"><span>College of Science Faculty</span></a></li>
+			 	<li><a href="#"><span>Science Honors Program</span></a></li>
+		 	</ul>
+		   </div>
+		   
+		   
+		   <div class="grid-column span-sm-6  span-2">
+		 	 <h4>My Spaces</h4>
+		 	<ul class="nav-panel">
+			 	<li><a href="#"><span>Carlson Bio Study Group</span></a></li>
+			 	<li><a href="#"><span>Biology Majors Unite!</span></a></li>
+			 	<li><a href="#"><span>Science Tutoring</span></a></li>
+			 	<li><a href="#"><span>Science Fair Planing</span></a></li>
+			 	<li><a href="#"><span>Knit-n-Knosh</span></a></li>
+	
+		 	</ul>
+		   </div>
+		   
+		    <div class="grid-column span-sm-6  span-2">
+		     <h4>Links</h4>
+		 	<ul class="nav-panel">
+			 	<li><a href="#"><span>Tutoring Center</span></a></li>
+			 	<li><a href="#"><span>Resource Guide</span></a></li>
+			 	<li><a href="#"><span>Library Database</span></a></li>
+			 	<li><a href="#"><span>Monument Eagles Schedule</span></a></li>
+		 	</ul>
+		    </div>
+		
+		<!--
+    <div class="grid-column span-sm-6  span-2">
+		   <h4>Settings</h4>
+		   
+		 	<ul class="nav-panel">
+			 	<li><a href="#"><span>Personal Information</span></a></li>
+			 	<li><a href="#"><span>Text size</span></a></li>
+			 	<li><a href="#"><span>High contrast</span></a></li>
+		 	</ul>
+		   </div>
+-->	
+		    
+		    
+		  
+					   
+		 </div>	
+			
+			
+		</div>
+	
+	
+<!-- COURSE NAME -->
+	
+	<div class="new-local-nav clearfix course-brand">
+	
+	<!--
+		<a href="#"  title="Skip Links" class="skip-links button button-clear button-notext">
+			<i class="icon-center icon-bolt"></i>
+		</a>
+	-->
+						
+	<div class="new-course-name">
+	
+		<div>
+			<h2><a href="#"  class="course-tab-text">Biology 101-2013 Spring Long name  very long name really long name</a></h2>
+		</div>
+		<div class="role-switch">
+			<a href="#"><i class="icon-user"></i></a>								
+		</div>
+	
+		<div class="cross-nav">
+			<a href="#" onclick="$('course_gallery').toggleClassName('show'); return false;"><i class="icon-share-alt" ></i></a>
+		</div>
+		
+	</div>
+							
+				
+			
+	<div class="panel course-gallery" id="course_gallery">
+					
+		<div class="grid-row bbdoc-row courses-list" >
+	
+			<div class="grid-element  span-2 span-sm-4 span-xs-6 column-offset-2">
+				<div><p><a href="#">
+					<span>Biology 101</span>
+				</a></p>
+				<p>Instructor: Beth Carlson </p>
+				
+				</div>
+			</div>
+			
+			<div class="grid-element  span-2 span-sm-4 span-xs-6">
+				<div><p><a href="#">
+					<span>Chemistry 102</span>
+				</a></p>
+				<p>Instructor: Beth Carlson </p>
+				</div>
+			</div>
+			
+			<div class="grid-element  span-2 span-sm-4 span-xs-6">
+				<div><p><a href="course_first_time_intro.html">
+					<span>Biology (Fall)</span>				
+				</a></p>
+				
+				<p>Instructor: Beth Carlson </p></div>
+			</div>
+			
+			<div class="grid-element  span-2 span-sm-4 span-xs-6">
+				<div><p><a href="course_path_student.html">
+					<span>English</span>
+				</a></p>
+				
+				<p>Instructor: Beth Carlson </p></div>
+			</div>
+		</div>		
+	
+	</div>
+	
+	
+	
+	
+	
+	
+
+
+
+</div> <!-- /.new-local-nav -->	 
+	
+<!-- END COURSE NAME -->
+
+	
+</div>
+
+
+	
+	
+
+
+	
+<!--
+<div class="page-title">
+
+
+		<div style="padding: 12px 0 0 60px">		
+			<ul class="nav-breadcrumbs">
+				<li><a href="#"><span>Link 1</span></a></li>
+				<li><a href="#"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span></a></li>
+				<li><a href="#"><span>Link 3</span></a></li>
+				<li><a href="#"><span>Link 4</span></a></li>
+			</ul>
+		</div>		
+		
+		
+			<div style="display:inline-block;margin-right:18px;border-right:1px solid #ccc; padding-right:18px">
+			<a href="#" class="" id="bb_content_nav_toggle" onclick="$$('html')[0].toggleClassName('has-menu');return false;">
+				<i class="icon-reorder"></i></a>
+		</div> 			        
+				
+	<div class="button-group pull-right hide-phone">
+		<a href="#" class="button button-clear button-notext full-screen" id="full_page" title="Full Page View" onclick="showFullPage(this)"><i class="icon-fullscreen"></i></a>
+		
+		<a href="#" class="toggle-track off" id="status_toggle_new">
+			<span class="toggle-label"><i class="icon-pencil"></i></span>
+			<span class="toggle-knob"><i class="icon-remove"></i></span>
+		</a>
+	
+	</div>						
+			
+			
+	<h1 style="display: inline-block">
+		
+		Chapter Materials
+	</h1>
+			
+</div>
+
+-->
+
+<!-- .course-name -->
+
+</header> <!-- /#bb_chrome_header -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="bb-content-holder" id="bb_content_holder">
+        
+        
+        
+    
+
+        
+        
+         <nav class="bb-content-nav" id="bb_content_nav" >
+        <!--   <a href="#" class="close-add-menu" style="left:12px; top:12px; position: relative;" onclick="$('bb_content_holder').removeClassName('has-menu'); return false"><span>&times;</span></a> -->
+     
+         <div class="bb-content-nav-block">
+         <div class="add-action">
+          		<a href="#" title="Add Item To Menu" class="page-action button button-add button-large button-block button-placeholder" onclick="showMenuAdd(this); return false;">
+          			<i  class="icon-center icon-plus"></i>
+          		</a>
+          	</div>
+		   <ul id="bb_content_nav_list" class="nav-menu reorderable">
+				<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Course Information</a></li>
+				<li class="here"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Chapter Material<!--  <span class="count-badge">5</span> --></a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 3</a></li>
+				<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">CNN.com</a></li>
+				<li class="divider"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 4</a></li>
+				<li class="hidden"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Let's Discuss Something</a></li>
+					<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Course Information</a></li>
+				<li class=""><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Chapter Material<!--  <span class="count-badge">5</span> --></a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 3</a></li>
+				<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">CNN.com</a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 4</a></li>
+				<li class="hidden"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Let's Discuss Something</a></li>
+					<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Course Information</a></li>
+				<li class=""><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Chapter Material<!--  <span class="count-badge">5</span> --></a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 3</a></li>
+				<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">CNN.com</a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 4</a></li>
+				<li class="hidden"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Let's Discuss Something</a></li>
+					<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Course Information</a></li>
+				<li class=""><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Chapter Material<!--  <span class="count-badge">5</span> --></a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 3</a></li>
+				<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">CNN.com</a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 4</a></li>
+				<li class="hidden"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Let's Discuss Something</a></li>
+					<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Course Information</a></li>
+				<li class=""><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Chapter Material<!--  <span class="count-badge">5</span> --></a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 3</a></li>
+				<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">CNN.com</a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 4</a></li>
+				<li class="hidden"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Let's Discuss Something</a></li>
+					<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Course Information</a></li>
+				<li class=""><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Chapter Material<!--  <span class="count-badge">5</span> --></a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 3</a></li>
+				<li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">CNN.com</a></li>
+				<li class="empty"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Content Area 4</a></li>
+				<li class="hidden"><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+					<a href="#">Let's Discuss Something</a></li>
+					
+					
+		   </ul>  
+		   </div> 
+		   <div style="position:relative;" class="bb-content-nav-block" id="tools_menu" >
+ <div class="add-action">
+          		<a href="#" title="Add Content To Page" class="page-action button button-add button-large button-block button-placeholder" onclick="showToolsAdd(this);return  false;">
+          			<i  class="icon-center icon-plus"></i>
+          		</a>
+          	</div>
+		    
+		    <ul id="tool_menu_list" class="bottom-tools nav-menu ">
+			   <li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+			   		<a href="#" data-icon="q">Discussions <span class="badge badge-count">12</span></a></li>
+			   <li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+			   <a href="#" data-icon=">">Announcements <span class="count-badge">300</span></a></li>
+			      <li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+			      <a href="#" data-icon="\">Calendar<span class="count-badge">1</span></a></li>
+			       <li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+			       <a href="#" data-icon="M">Course Mail<span class="count-badge">9</span></a></li>
+			     
+			    <li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+			    <a href="#" data-icon="g">Classmates<span class="count-badge">100+</span></a></li>
+			     <li><a href="#" class="item-reorder"><i class="icon-resize-vertical"></i></a>
+			     <a href="#" data-icon="i">Syllabus</a></li>
+			     
+			     
+			   
+		   </ul> 
+		
+		   </div>
+        
+		   
+		 
+	   </nav> <!-- /.bb-content-nav -->
+
+        <main role="main" id="bb_payload" class="bb-payload content-page course-page">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--
+	         :
+	        
+	        Insert your content here...
+        -->
+        
+        
+        
+        
+<div class="head"><h1>         <input type="text" name="subject" placeholder="New Assignment" autofocus="autofocus" class="inline-edit"></h1><div class="vis">Item availability: </div> <div class="vis1"></div> </div>
+
+<hr>
+
+<div class="vtbe-wrap">
+		      	<div class="control-strip  top"> 
+		        
+
+  <div class="mceEditor defaultSkin clearfix">	
+    <div id="htmlData_text_simplevtbe" class="simplevtbe " style="height: 32px;">
+      <div class="buttonGroup">       
+       <a title="Bold" class="mceButton mceIcon mce_bold" href="#" id="htmlData_text_bold" role="button" aria-label="bold" onclick="return false;">
+          Bold
+       </a>
+       <a title="Italic" onclick="return false;" class="mceButton mceIcon mce_italic" href="javascript:;" id="htmlData_text_italic" role="button" aria-label="italic">
+         Italic
+      </a>
+      <a title="Underline" aria-labelledby="htmlData_text_underline_voice" onclick="return false;" class="mceButton mceIcon mce_underline" href="javascript:;" id="htmlData_text_underline" role="button" aria-label="Underline">
+         Underline
+      </a>
+    </div>  
+    <a onclick="return false;" href="javascript:;" id="htmlData_text_fontselect_text" aria-label="Font family - Arial" class="listBox" role="listbox" aria-valuenow="Arial">Arial</a>
+      
+    <a class="mceButton listBox" id="htmlData_text_fontsizeselect" aria-haspopup="true" role="listbox" aria-valuenow="3 (12pt)" aria-label="Font size - 3 (12pt)" onclick="return false;" href="javascript:;">3 (12pt)</a>
+      
+    <a title="Text Color" onmousedown="return false;" onclick="return false;" class="mceIcon splitButton mce_forecolor" href="javascript:;" tabindex="-1" id="htmlData_text_forecolor_action" role="button" aria-haspopup="true">
+    Text Color
+    </a>
+          
+    <a title="Bullet List" onmousedown="return false;" onclick="return false;" class="mceIcon splitButton mce_bullist" href="javascript:;" tabindex="-1" id="htmlData_text_forecolor_action" role="button" aria-haspopup="true">
+    Bullet List
+    </a>
+      
+    <a title="Number List" onmousedown="return false;" onclick="return false;" class="mceIcon splitButton mce_numlist" href="javascript:;" tabindex="-1" id="htmlData_text_forecolor_action" role="button" aria-haspopup="true">
+    Number List
+    </a>
+      
+    <a title="Toggle Spell Checker" onmousedown="return false;" onclick="return false;" class="mceIcon splitButton mce_spellchecker" href="javascript:;" tabindex="-1" id="htmlData_text_forecolor_action" role="button" aria-haspopup="true">
+    Toggle Spell Checker
+    </a>
+  
+    <a title="Insert/Edit Link" aria-labelledby="htmlData_text_link_voice" onclick="return false;" onmousedown="return false;" class="mceButton mceIcon mce_link" href="javascript:;" id="htmlData_text_link" role="button" tabindex="-1" aria-disabled="true"><span class="mceIcon mce_link"></span><span id="htmlData_text_link_voice" style="display: none;" class="mceVoiceLabel mceIconOnly">Insert/Edit Link</span></a>
+    
+    <a title="Remove Link" aria-labelledby="htmlData_text_unlink_voice" onclick="return false;" onmousedown="return false;" class="mceButton mceIcon mce_unlink" href="javascript:;" id="htmlData_text_unlink" role="button" tabindex="-1" aria-disabled="true"><span class="mceIcon mce_unlink"></span><span id="htmlData_text_unlink_voice" style="display: none;" class="mceVoiceLabel mceIconOnly">Remove Link</span></a>
+    
+    <div class="buttonPanelRight buttonGroup">
+      <a title="Preview" aria-labelledby="htmlData_text_preview_voice" onclick="return false;" onmousedown="return false;" class="mceButton mceIcon mce_preview" href="javascript:;" id="htmlData_text_preview" role="button" tabindex="-1"><span class="mceIcon mce_preview"></span><span id="htmlData_text_preview_voice" style="display: none;" class="mceVoiceLabel mceIconOnly">Preview</span></a>
+      <a title="Help" aria-labelledby="htmlData_text_help_voice" onclick="return false;" onmousedown="return false;" class="mceButton mceIcon mce_help" href="javascript:;" id="htmlData_text_help" role="button" tabindex="-1"><span class="mceIcon mce_help"></span><span id="htmlData_text_help_voice" style="display: none;" class="mceVoiceLabel mceIconOnly">Help</span></a>
+      <a title="Full Screen" aria-labelledby="htmlData_text_fullscreen_voice" onclick="return false;" onmousedown="return false;" class="mceButton mceIcon mce_fullscreen" href="javascript:;" id="htmlData_text_fullscreen" role="button" tabindex="-1" aria-pressed="false"><span class="mceIcon mce_fullscreen"></span><span id="htmlData_text_fullscreen_voice" style="display: none;" class="mceVoiceLabel mceIconOnly">Full Screen</span></a>
+      <a title="Show More" aria-labelledby="htmlData_text_bb_slidercontrol_voice" onclick="return false;" onmousedown="return false;" class="mceButton mceIcon arrowDown" href="javascript:;" id="htmlData_text_bb_slidercontrol" role="button" tabindex="-1"><span id="htmlData_text_bb_slidercontrol_voice" style="display: none;" class="mceVoiceLabel mceIconOnly">Show More</span></a>
+    </div>
+  </div>
+</div>
+		        
+		      	</div>
+	      	
+		      	<textarea placeholder="Enter Description Here" onfocus="this.up().addClassName('full-vtbe')" onblur="this.up().removeClassName('full-vtbe')"></textarea>
+		      	
+		      	
+			    <div class="control-strip" style="text-align:center !important;"> 	
+Drag files here. &nbsp Or select files from your computer, Content Collection, or xpLor		      	</div>
+		      	
+	      	</div>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+<div class="box2"><b>Due Date</b><div class="date">October 2, 2013</div><div class="edit"><a href="#">Edit</a></div></div> <br> <Br><br>
+
+
+<div class="box2"><b>Points Possible</b><div class="date"><u>Lab Report Evaluation Rubric</u>: 50 Points</div><div class="edit"><a href="#">Edit</a></div></div> <br> <Br><Br>
+
+
+
+
+<div class="box2"><b>Submission Required: </b><div class="date">Individual Submission</div><div class="edit"><a href="#"> Edit</a></div></div> <br> <Br><Br>
+<Br>
+
+
+
+
+
+
+
+
+        
+
+        
+        
+        
+        
+        
+        
+          <!--
+			  /Insert...
+        -->
+        
+		</main> <!-- ./content -->
+		
+		
+		
+		
+		
+    <div class="full-cover setup-dash" id="assistant_overlay">
+	<a href="#" class="close-add-menu" onclick="$('assistant_overlay').removeClassName('display');"><span>×</span></a>
+	
+	<div>
+	<h1>Welcome to Biology 101 (Fall)</h1>
+	
+	
+<ul class="nav-menu icons-stacked menu-tiles" style=" margin:0 auto;">
+				<li class="analyze"><a href="mng_course_analyzer.html"> <i class="icon-cogs"></i> <span>Analyze Course</span><span class="status">Complete</span>
+					<div class="progressBarMini p100 good"></div>
+				</a></li>
+				<li class="dates"><a href="mng_date_management.html"><i class="icon-calendar-empty"></i> <span>Adjust Dates</span><span class="status">Not Started</span>
+					
+					<div class="progressBarMini p0 good"></div>
+					
+				</a></li>
+				<li class="setup_content"><a href="course_outline.html">
+						<i class="icon-folder-close"></i> 
+						<span>Consider Your Content</span>
+						<span class="status">30% Complete</span>
+						<div class="progressBarMini p25 good"></div>
+					</a></li> 
+				<li class="settings"><a href="mng_course_settings.html"> <i class="icon-wrench"></i> <span>Optimize Settings</span> <span class="status">75% Complete</span>
+					<div class="progressBarMini p75 good"></div>
+				</a></li>  
+
+			</ul>
+		
+		
+		
+		
+	</div>
+	
+	
+	
+	</div>
+	
+	
+
+    
+<!--
+<div class="course-controls button-group" >
+
+	
+	<a href="#" onclick="$('manage_menu_2').addClassName('display');this.up().hide();return false;" 	class="button button-rounded button-badge button-error button-shadow "><i class="icon-gear"></i>
+	<span class="status">5</span></a>
+	
+<div class="dismissable hide-mobile">
+
+	<a href="#"  id="assistant_button" class="button button-rounded  button-attention button-shadow button-assistant " style="padding-right:40px;">
+		<i class="icon-magic"></i>
+		<span>Resume Course Setup...</span></a>
+	<a href="#" class="close-add-menu" id="close_assistant_button"><span>×</span></a>
+</div>	
+	
+</div> 
+-->
+
+
+
+
+
+<nav class="panel panel-management"  id="manage_menu_2">
+	
+		<a href="#" class="close-add-menu" onclick="$('manage_menu_2').removeClassName('display');$$('.course-controls')[0].show();;return false;"><span>×</span></a>
+	
+	<header class="clearfix">
+		<h3 class="panel-title pull-left">Course Management</h3>
+		<span class="toggle-wrap pull-right">		
+	<span>Course Availability:</span>
+	<a href="#" class="button-toggle toggle-track inverse on" id="course_status_toggle">
+			<span class="toggle-label">ON</span>
+			<span class="toggle-knob"><i class="icon-ok"></i></span>
+		</a></span>
+		</header>
+		<div></div>
+
+	
+	<div class="bbdoc-row">
+	
+	<div  class="grid-column span-sm-6  span-3">
+	<h4>Setup</h4>
+		<ul class="nav-panel">
+			<li><a href="mng_course_analyzer.html"><span>Analyzer</span></a></li>
+			<li><a href="#"><span>Customization</span></a></li>
+			<li><a href="mng_date_management.html"><span>Date Management</span></a></li>
+			<li><a href="mng_course_settings.html"><span>Settings</span></a></li>
+			<li><a href="#"><span>Users</span> and <span>Groups</span></a></li>
+			<li><h5>Utilities</h5>
+				<ul>
+					<li><a href="#"><span>Archive Complete Course</span></a></li>
+					<li><a href="#"><span>Delete in Bulk</span></a></li>
+					<li><a href="#"><span>Export Course Content</span></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="grid-column span-sm-6  span-3">
+	<h4>Tracking</h4>
+		<ul class="nav-panel">
+	
+			<li><a href="course_grade_center_grid.html" class="attention"><span>Gradebook</span></a></li>
+			<li><a href="#"><span>Performance</span></a></li>
+			<li><a href="course_retention_center.html" class="attention"><span>Retention Center</span> <span class="badge badge-count">5</span></a></li>	
+			<li><h5>Reports</h5>
+				<ul>
+					<li><a href="#"><span>Course Reports</span></a></li>
+					<li><a href="#"><span>Performance Reports</span></a></li>
+					<li><a href="#"><span>SCORM Reports</span></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="grid-column span-sm-6  span-3">
+	<h4>Content</h4>
+	<ul class="nav-panel">
+		<li><a href="course_outline.html"><span>Course Outline</span></a></li>
+		<li><h5>Content Collection</h5>
+			<ul>
+				<li><a href="#"><span>Biology 101</span></a></li>
+				<li><a href="#"><span>All Courses Files</span></a></li>
+				<li><a href="#"><span>All Organizations Content</span></a></li>
+				<li><a href="#"><span>Institution Content</span></a></li>
+			
+			</ul>
+		</li>
+		<li><input placeholder="Search Content" type="text" class="search"></li>
+		<li><a href="#"><span>Advanced Search</span></a></li>
+	
+	</ul>
+	</div>
+	
+	<div class="grid-column span-sm-6 span-3">
+	<h4>Tools</h4>
+
+			<ul class="nav-sub columns-css-2">
+				<li><a href="#"><span>Achievements</span></a></li>
+				<li><a href="#"><span>Announcements</span></a></li>
+				<li><a href="mng_blog_inventory.html"><span>Blogs</span></a></li>
+				<li><a href="#"><span>Collaboration</span></a></li>
+				<li><a href="#"><span>Contacts</span></a></li>
+				<li><a href="#"><span>Calendar</span></a></li>
+				<li><a href="#"><span>Messages</span></a></li>
+				<li><a href="#"><span>Discussions</span></a></li>
+				<li><a href="#"><span>Glossary</span></a></li>
+				<li><a href="#"><span>Goals</span></a></li>
+				<li><a href="#"><span>Journals</span></a></li>
+				<li><a href="#"><span>Partner Cloud Tools</span></a></li>
+				<li><a href="#"><span>Rubrics</span></a></li>
+				<li><a href="#"><span>Safe Assign</span></a></li>
+				<li><a href="#"><span>Self and Peer Assessment</span></a></li>
+				<li><a href="#"><span>Email</span></a></li>
+				<li><a href="#"><span>Tasks</span></a></li>
+				<li><a href="#"><span>Tests</span>, <span>Surveys</span>, and <span>Pools</span></a></li>
+				<li><a href="#"><span>Wikis</span></a></li>
+				<li><a href="mng_tools.html"><span>Enable more tools...</span></a></li>
+			</ul>
+
+	</div> 
+	
+	
+	
+	</div>
+
+
+				
+</nav> <!-- /.panel-management -->
+
+<!-- end here -->
+
+
+
+
+ 
+				
+
+				
+				
+				
+				
+				
+				
+	<div class="footer-control-strip" id="pw_edit_mode_controls" style="display:none;">
+      
+       	
+       	<a href="#" class="button button-large" onclick="savePage()">Undo all changes</a>
+	        <input type="submit" class="button button-large button-primary" onclick="savePage()" value="I'm done editing">
+       </div>
+    
+		
+             </div> <!-- ./bb-content-holder -->
+        
+        
+        
+        
+        
+        <div class="footer-control-strip">
+
+
+
+	<!--footer was moved here
+Each modal exsts in a separate file.  loaded via ajax.
+-->
+
+
+
+
+
+
+
+
+
+        	<div><div style="float:left; margin-top:10px;">
+
+<a href="modal4.html" title="Options" class="footer2" onclick="
+Modalbox.show(this.href, {title: this.title, width: '90%'}); return false;
+"> Options</a>
+
+<a href="modal1.html" class="footer1" title="Options" onclick="
+Modalbox.show(this.href, {title: this.title, width: '90%'}); return false;
+"> Options</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="modal2.html" class="footer1" title="Restrictions" onclick="
+Modalbox.show(this.href, {title: this.title, width: '90%'}); return false;
+">Restrictions (1)</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="modal3.html" class="footer1" title="Goals" onclick="
+Modalbox.show(this.href, {title: this.title, width: '90%'}); return false;
+"> Goals (5)</a>
+</div>
+        		<a href="course_content.html?session=editmode" class="button button-large">Cancel</a>
+
+	        <input type="submit" value="Save" class="button button-large button-inverse" onclick="document.location='course_content.html?session=editmode'"></div>
+        </div>
+             
+             
+        
+	    </div> <!--/.bb-chrome-->
+	    
+	    <div class="mybb" id="my_bb" style="display:none;">
+		    <h1>My Blackboard stuff <ahref="#"><a href="#" onclick="toggleMyBb();$('global_nav_flyout').toggle();$('current_user').toggleClassName('active');">x</a></h1>
+	    </div>
+	    
+     </div> <!--/.bb-box-->
+
+
+
+<!-- Dynamic elements -->
+
+
+     
+          
+          
+           <div class="panel panel-add" id="add_menu" style="display: none;">
+          <a href="#" class="close-add-menu" onclick="showAdd(this);$('bb_payload').addClassName('is-editable'); return false"><span>&times;</span></a>
+		  <h3 class="panel-title" >
+	      	<span >Add to Page</span>
+	      </h3>
+	      
+          <div class="panel-content">
+         <p> 
+          <ul class="nav-menu icons-stacked nav-inline">
+				<li><a href="#"> <i class="icon-align-left"></i> Content</a></li>
+				<li><a href="form_assignment.html"><i class="icon-check"></i> Assignment</a></li>
+				<li><a href="form_discussions.html"><i class="icon-comments"></i> Discussion</a></li> 
+				<li><a href="form_test.html"> <i class="icon-question"></i> Test</a></li>    
+				<li><a href="form_test.html"> <i class="icon-link"></i> Link</a></li> 
+
+			</ul>
+          
+</p>       
+
+
+   
+        <div class="grid-row secondary-types">  
+    <!--
+    <div class="grid-column span-2  span-sm-4">
+          <h5>Content</h5>
+	         <ul>
+		      
+		        <li><a href="form_quick_link.html">Quick Link</a></li>
+		     </ul>
+		    
+          </div>
+-->
+          <div class=" grid-column span-2-half  span-sm-4">
+	         <h5>Organization</h5>
+	         <ul>
+	         	 <li><a href="form_folder.html">Folder</a></li>
+	         	 <li><a href="form_lesson_plan.html">Lesson Plan</a></li>
+	         	 <li><a href="#">Syllabus</a></li>
+	         </ul>
+          </div>
+          
+          <div class=" grid-column span-2-half span-sm-4">
+	         <h5>Assessment</h5>
+	         <ul>
+	    <!--      	 <li><a href="form_assignment.html">Assignment</a></li> -->
+	         	<!--  <li><a href="form_test.html">Test</a></li> -->
+	         	 <li><a href="#">SCORM</a></li>
+	         	 <li><a href="#">Survey</a></li>
+	         </ul>
+          </div>
+          
+           <div class=" grid-column span-2-half span-sm-4">
+	         <h5>Commercial Content</h5>
+	         <ul>
+	         	 <li><a href="#">McGraw-Hill Biology</a></li>
+	         	 <li><a href="#">Choose Another Resource...</a></li>
+	         </ul>
+          </div>
+          
+          <div class=" grid-column span-2-half span-sm-4">
+	         <h5>Engagement</h5>
+	         <ul>
+	         	 <li><a href="#">Blog</a></li>
+	         	<!--  <li><a href="form_discussions.html">Discussions</a></li> -->
+	         	 <li><a href="#">Journal</a></li>
+	         	 <li><a href="#">Meeting Room</a></li>
+	         	 <li><a href="#">Wiki</a></li>
+	         </ul>
+          </div>
+          
+            <div class=" grid-column span-2-half  span-sm-4">
+	         <h5>More...</h5>
+	         <ul>
+	         	 <li><a href="#">Pearson myMathLab</a></li>
+	         	 <li><a href="#">OSCELOT Roster</a></li>
+	         </ul>
+          </div>
+</div>          
+          
+
+	           
+
+			 </div>
+			 
+			 <div class="attachment-controls secondary-types">
+		  		
+		  		<div class="drop-target button button-rounded  button-xlarge" id="drop_target" onmousedown="toggleClassName('drop-action')">
+						<i class="icon-paper-clip"></i><span>Drag files here... (click)</span>
+						</div>
+		  		<div class="button-wrap form-group"> Or select files from 
+						<a class="button-5" href="#">your computer</a>,
+						<a class="button-5" href="#">Content Collection</a>, or <a class="button-5" href="#">xpLor</a>
+					
+						
+					</div>
+		  		
+			  	</div>
+	</div> <!--/#add_menu-->
+
+          
+          <div class="panel panel-add panel-small" id="add_bb_content_nav" style="overflow: visible;display: none;">
+          <a href="#" class="close-add-menu" onclick="showAdd(this);$('bb_content_nav').addClassName('is-editable'); return false"><span>&times;</span></a>
+          <h3 class="panel-title">
+	      	<span>Add to Outline</span>
+	      </h3>
+          <div class="panel-content">
+	         <ul>
+		        <li><a href="#">Content Area</a></li> 
+		        <li><a href="#">Module Page</a></li> 
+		        <li><a href="#">Blank Page</a></li> 
+		        <li><a href="#">Tool Link</a></li> 
+		        <li><a href="#">Web Link</a></li> 
+		        <li><a href="#">Course Link</span></a></li> 
+		        <li><a href="#">Subhead</a></li> 
+		        <li><a href="#">Divider</a></li> 
+	         </ul>
+
+			 </div>
+	</div>
+	
+	 <div class="panel panel-add panel-small" id="add_tools" style="overflow: visible; display: none;">
+          <a href="#" class="close-add-menu" onclick="showAdd(this);$('bb_content_nav').addClassName('is-editable'); return false"><span>&times;</span></a>
+          <h3 class="panel-title">
+	      	<span >Add tools</span>
+	      </h3>
+          <div class="panel-content">
+	         <ul>
+		        <li><a href="#"><span data-icon="N">Email</span></a></li> 
+		        <li><a href="#"><span data-icon="|">Tasks</span></a></li> 
+		        <li><a href="#"><span data-icon="F">Wikis</span></a></li> 
+		       
+	         </ul>
+
+			 </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

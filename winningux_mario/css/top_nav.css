@@ -1,0 +1,373 @@
+/*
+@media screen only and (max-width:1319px) {
+    
+	.sticky + .bb-content-holder.has-menu .page-header  {
+		left:260px;
+		right:0;
+		margin-left: 0px;
+		background: yellow;
+	}
+		
+	.sticky + .bb-content-holder .page-header {
+		left: 0;
+		right: 0;
+		margin-left: 0px;
+		padding-left: 28px;
+		background: purple;
+	}
+}
+
+    
+@media screen only and (min-width:1320px) {
+    
+    .sticky + .bb-content-holder.has-menu .page-header  {
+     	width: 1060px;
+	 	margin-left: -48px;
+	 	background: red;
+	}
+	
+	.sticky + .bb-content-holder .page-header {
+		width: 1320px;
+		left:auto;
+		right:auto;  
+		background: blue;   
+	}
+}
+    
+*/
+
+
+		
+		.course-tab > a {
+						padding: 18px 0px;
+						display: block;
+						color: #fff;
+						text-decoration: none;
+						font-weight: 600;
+						font-size: 13px;
+						width: 216px;
+						
+		}
+		
+		.course-tab > a:first-child {
+			padding: 18px 12px;
+			
+		font-size: 20px;
+		color: #999;
+		width: auto;
+		}
+		
+		.course-tab > a:first-child:hover {
+		color: #fff;
+		}
+		
+		
+		.course-tab > a + a {
+			padding-left:0
+		}
+		
+
+		
+
+
+.has-menu .bb-content-nav,
+.has-menu-peek .bb-content-nav {
+    width: 260px;
+    }
+		
+		
+		.system-tabs-wrapper a {
+			color: #fff;
+			padding:0 30px
+}
+
+.nav-tabs > li > a {
+	padding:18px 30px;
+}
+
+
+
+.bb-content-nav {
+	top:-69px;
+}
+
+
+.sticky + .bb-content-holder .bb-content-nav,
+.sticky + .bb-content-holder .sticky-tools {
+
+    top: 96px;
+    
+    }
+    
+        .global-nav .user-name a,
+        .global-nav .logout a,
+    .sticky .global-nav .user-name a,
+.sticky .global-nav .logout a {
+    color: #fff;
+}
+
+
+
+
+     .sticky + .bb-content-holder .page-header {
+
+   /*  position: fixed; */
+    top: 57px;
+    		background: #fff;
+		z-index: 90;
+   
+    
+    }
+    
+    
+    .sticky + .has-menu.bb-content-holder .page-header  {
+
+    }
+    
+   
+    
+    
+    .sticky + .bb-content-holder .page-header h1 {
+	   /*
+ font-size: 16px;
+	    border-bottom: 1px solid #ccc;
+	    margin-bottom:0;
+	    padding-bottom: 10px;
+	    padding-top:10px;
+*/
+    }
+    
+    .menu-control {
+	    position: relative;
+	    z-index: 100000;
+	    top:12px;
+	    left: 24px
+    }
+    
+    .bb-content-holder.has-menu .content,
+.bb-content-holder.has-menu .bb-payload,
+.bb-outline-holder.has-menu .content,
+.bb-outline-holder.has-menu .bb-payload {
+    margin-left: 0px;
+    }
+    
+    
+   .sticky .global-nav {
+    top: 10px;
+    }
+    
+
+	.course-tab {
+		display: inline-block;
+		width: 100%;
+	}
+	
+	
+	.system-tabs-wrapper a.current-tab {
+		font-size: 18px;
+		color:#999;
+		line-height: 1.8;	
+		padding:12px;
+		background-image: none;
+	}
+	
+		.system-tabs-wrapper a.current-tab:hover {
+			color:#fff;
+		}
+		
+		
+		.course-name {
+			background: #fff;
+		}
+		
+.course-name h2 {
+    margin: 0;
+    padding: 14px 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+	.mode-controls,
+	.sticky .mode-controls  {
+    	margin: 2px 0px 0 0;
+	}
+	
+	
+	.system-nav .nav-system-learn {
+		background: #494949;
+	}
+		
+
+@media only screen and (min-width: 0px) and (max-width: 499px) { 
+	 
+	.global-nav,
+	.global-nav:hover {
+    	background: #494949;
+    	display: block;
+    	position: relative;
+    	padding: 6px 12px;
+    	text-align: center;
+    	border-bottom:1px solid #333;
+    }
+    
+    .sticky .global-nav {
+	    top: 0;
+    }
+        
+    .user-name a .name-text {
+	    display: inline-block;
+    }
+    
+    .course-tab a:first-child {
+		padding: 13px 12px;	
+		font-size: 20px;
+		color: #999;
+		width: auto;
+		position: absolute;
+		left: 0
+	}
+	
+	.system-nav .system-tabs-wrapper {
+		position: absolute;
+		right:0;
+	}
+	
+	.course-tab {
+		text-align: center;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	
+	.course-tab a {
+		width: auto;
+	}
+	
+	div.logout {
+		position: absolute;
+		right: 0;
+		color: #999;
+	}
+	
+	.course-tab a {
+		padding: 14px 0px;
+	}
+	
+	.course-name h2,
+	.sticky .course-name h2 {
+    	padding: 16px 18px;
+    	border-bottom: 1px solid #ccc;
+	}
+	
+	    .system-tabs-wrapper {
+		margin-left: 0px;
+	}
+	
+}
+
+
+    ul.nav-menu.icons-stacked.menu-tiles {
+	    width: 300px;
+    }
+
+
+@media only screen and (min-width: 500px) {
+
+	.course-tab {
+		display: inline-block;
+		width: 260px;
+		border-right: 1px solid #666;
+		/* float: left; */
+	}
+	
+		.sticky + .bb-content-holder .bb-content-nav {
+		top: 62px;	
+	}
+	
+	.system-tabs-wrapper {
+		margin-left: 0;
+	}
+	
+	.course-name h2,
+	.sticky .course-name h2 {
+    	padding: 16px 18px;
+	}
+	
+	    
+    .bb-content-holder.has-menu .content,
+.bb-content-holder.has-menu .bb-payload,
+.bb-outline-holder.has-menu .content,
+.bb-outline-holder.has-menu .bb-payload {
+    margin-left: 260px;
+    }
+    
+    
+        .system-tabs-wrapper {
+		margin-left: 0px;
+	}
+	
+
+	
+/*
+ .global-nav {
+	    top: 10px;
+    }
+*/
+	
+	.has-menu .bb-chrome-header .course-name h2  {
+		padding-left: 280px;
+	}8
+	
+	.bb-content-nav {
+   		top: -64px;
+	}
+	
+	.mode-controls {
+    	margin: 16px 12px 0 0;
+	}
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+    /* line 7, ../sass/_global-nav.scss */
+    .global-nav {
+        top: 10px;
+    }
+}
+    
+@media only screen and (min-width: 768px) {
+    /* line 384, ../sass/_structure.scss */
+    .content,
+    .bb-payload {
+  
+        padding: 30px 48px 34px;
+    }
+    
+    
+    	.course-name h2,
+	.sticky .course-name h2 {
+    	padding: 16px 48px;
+	}
+	
+		.has-menu .bb-chrome-header .course-name h2  {
+		padding-left: 310px;
+	}
+	
+	
+	ul.nav-menu.icons-stacked.menu-tiles {
+	    width: 600px;
+    }
+    
+            .system-tabs-wrapper {
+		margin-left:24px;
+	}
+	
+		.system-nav .nav-system-learn {
+		background: transparent;
+	}
+	
+
+
+}
+
+
+

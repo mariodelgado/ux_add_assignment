@@ -1,0 +1,1276 @@
+/* line 1, ../sass/retention.scss */
+a {
+  color: #0099B6; }
+
+/* Layout */
+/* line 8, ../sass/retention.scss */
+.column-2.main {
+  width: 72%;
+  padding-right: 30px;
+  border-right: 1px solid #ccc; }
+
+/* line 13, ../sass/retention.scss */
+.column-2.sidebar {
+  float: right;
+  width: 25%;
+  height: 600px; }
+
+/* Bar Chart */
+/* line 20, ../sass/retention.scss */
+.barchart-outer {
+  width: 100%;
+  height: 34px;
+  padding: 1px;
+  border: 1px solid #DEDBD3;
+  position: relative;
+  background: #fffdf6;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fffdf6 27%, #f9f6f1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #fffdf6), color-stop(100%, #f9f6f1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fffdf6 27%, #f9f6f1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fffdf6 27%, #f9f6f1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fffdf6 27%, #f9f6f1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fffdf6 27%, #f9f6f1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdf6', endColorstr='#f9f6f1',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 36, ../sass/retention.scss */
+.barchart-inner {
+  height: 30px;
+  z-index: 1;
+  float: left;
+  position: relative;
+  -moz-transition-duration: .2s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: ease-in;
+  transition-duration: .2s;
+  transition-timing-function: ease-in; }
+
+/* line 49, ../sass/retention.scss */
+.barchart-inner > a {
+  display: block;
+  height: 100%; }
+
+/* line 53, ../sass/retention.scss */
+.barchart-inner > a > span {
+  color: #333;
+  top: -35px;
+  position: relative;
+  text-align: right;
+  display: none;
+  width: 100%;
+  font-size: 90%;
+  z-index: 999; }
+
+/* line 65, ../sass/retention.scss */
+.barchart-inner > a:hover > span,
+.barchart-inner > a:focus > span {
+  display: block; }
+
+/* line 70, ../sass/retention.scss */
+.barchart-inner > a > span > span:before,
+.barchart-inner > a > span > span:after {
+  border-color: rgba(0, 0, 0, 0.55) transparent transparent;
+  border-style: solid solid none;
+  border-width: 10px 10px 0px;
+  bottom: -10px;
+  content: "";
+  display: block;
+  margin-left: -10px;
+  position: absolute;
+  right: 0px; }
+
+/* line 81, ../sass/retention.scss */
+.barchart-inner > a > span > span {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  padding: 4px 10px;
+  display: inline-block;
+  border-radius: 3px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: -40px; }
+
+/* line 93, ../sass/retention.scss */
+.barchart-inner .riskFactorCount {
+  color: #FFF;
+  display: block;
+  font-weight: bold;
+  position: absolute;
+  text-align: right;
+  font-weight: normal;
+  border-bottom: 1px dotted #FFF;
+  width: auto;
+  font-size: 175%;
+  opacity: 0.95;
+  letter-spacing: 0px;
+  top: 3px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  right: 5px;
+  line-height: 100%; }
+
+/* line 112, ../sass/retention.scss */
+.barchart-inner.not-at-risk {
+  background: transparent; }
+
+/* line 115, ../sass/retention.scss */
+.barchart-inner.currentlyActive {
+  box-shadow: 1px 1px 10px #AAAAAA; }
+
+/* line 118, ../sass/retention.scss */
+.barchart-inner.at-risk {
+  background: #df0100;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #df0100 27%, #550000 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #df0100), color-stop(100%, #550000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #df0100 27%, #550000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #df0100 27%, #550000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #df0100 27%, #550000 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #df0100 27%, #330000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#df0100', endColorstr='#550000',GradientType=0 );
+  /* IE6-9 */
+  background-size: 1px 90px; }
+
+/* line 129, ../sass/retention.scss */
+.barchart-inner.grade-risk {
+  background: #660033;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ce086b 21%, #4f2a3c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(21%, #ce086b), color-stop(100%, #4f2a3c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ce086b 21%, #4f2a3c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ce086b 21%, #4f2a3c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ce086b 21%, #4f2a3c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ce086b 21%, #4f2a3c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CE086B', endColorstr='#4F2A3C',GradientType=0 );
+  /* IE6-9 */
+  background-size: 1px 90px; }
+
+/* line 140, ../sass/retention.scss */
+.barchart-inner.deadlines-risk {
+  background: #00aead;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #007573 27%, #003d3c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #007573), color-stop(100%, #003d3c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #007573 27%, #003d3c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #007573 27%, #003d3c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #007573 27%, #003d3c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #007573 27%, #003d3c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007573', endColorstr='#003D3C',GradientType=0 );
+  /* IE6-9 */
+  background-size: 1px 90px; }
+
+/* line 151, ../sass/retention.scss */
+.barchart-inner.access-risk {
+  background: #ed7e25;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #916800 27%, #543c00 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #916800), color-stop(100%, #543c00));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #916800 27%, #543c00 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #916800 27%, #543c00 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #916800 27%, #543c00 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #916800 27%, #543c00 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#916800', endColorstr='#543C00',GradientType=0 );
+  /* IE6-9 */
+  background-size: 1px 90px; }
+
+/* line 162, ../sass/retention.scss */
+.barchart-inner.activity-risk {
+  background: #084294;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #3669aa 27%, #07245c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #3669aa), color-stop(100%, #07245c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3669aa 27%, #07245c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #3669aa 27%, #07245c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #3669aa 27%, #07245c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #3669aa 27%, #07245c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3669AA', endColorstr='#07245c',GradientType=0 );
+  /* IE6-9 */
+  background-size: 1px 90px; }
+
+/* Barchart hover effect */
+/* line 176, ../sass/retention.scss */
+.barchart-inner:hover,
+.barchart-inner:focus {
+  background-position: 30px; }
+
+/* line 180, ../sass/retention.scss */
+.risk-factors-list {
+  background-color: rgba(25, 25, 25, 0.9);
+  border: 1px solid #666666;
+  width: 250px;
+  z-index: 100;
+  margin: 0 auto;
+  color: #FFF;
+  padding: 20px 10px 10px 10px;
+  position: relative;
+  top: 5px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 20px #666;
+  cursor: auto; }
+
+/* line 194, ../sass/retention.scss */
+.risk-factors-list h3 {
+  margin: -10px 0 0 0; }
+
+/* line 197, ../sass/retention.scss */
+.risk-factors-list ul li {
+  margin: 10px 0px;
+  font-size: 95%;
+  padding-right: 30px;
+  position: relative; }
+
+/* line 203, ../sass/retention.scss */
+.risk-factors-list ul li span.count {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 110%;
+  font-weight: bold; }
+
+/* line 210, ../sass/retention.scss */
+.risk-factors-list a {
+  color: #17C5E9;
+  border-bottom: 1px dotted #01758C; }
+
+/* line 214, ../sass/retention.scss */
+.risk-factors-list .refresh-date {
+  color: #AAA;
+  font-size: 90%;
+  float: left;
+  width: 130px;
+  margin-top: 3px; }
+
+/* line 221, ../sass/retention.scss */
+.risk-factors-list button {
+  background: none repeat scroll 0 0 #CCCCCC;
+  border: 1px solid #666666;
+  border-radius: 3px 3px 3px 3px;
+  cursor: pointer;
+  float: right;
+  font-size: 90%;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 3px 5px; }
+
+/* line 232, ../sass/retention.scss */
+.risk-factors-list button img {
+  width: 24px; }
+
+/* line 235, ../sass/retention.scss */
+.risk-factors-list a.closeBtn {
+  color: #CCC;
+  font-size: 125%;
+  top: 5px;
+  right: 5px;
+  border-bottom: 0px; }
+
+/* line 242, ../sass/retention.scss */
+.chart-navlink {
+  font-size: 90%;
+  margin-top: 5px;
+  display: block; }
+
+/* line 247, ../sass/retention.scss */
+.notatrisk-chart {
+  width: 96%;
+  text-align: right; }
+
+/* line 251, ../sass/retention.scss */
+a.prev-chart {
+  font-size: 90%;
+  margin: 5px 0 -5px;
+  display: block; }
+
+/* Retention Cener data table styles */
+/* line 258, ../sass/retention.scss */
+table, .inventory {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 20px; }
+
+/* line 263, ../sass/retention.scss */
+table caption {
+  position: absolute;
+  text-indent: -9999px;
+  height: 0;
+  width: 0; }
+
+/* line 269, ../sass/retention.scss */
+table a {
+  font-weight: bold; }
+
+/* line 272, ../sass/retention.scss */
+table thead th {
+  text-align: center;
+  text-transform: uppercase; }
+
+/* line 283, ../sass/retention.scss */
+table thead th span {
+  text-transform: none;
+  display: block;
+  font-family: "Lucida Grande", Arial, sans-serif;
+  padding: 2px;
+  color: #666666;
+  margin-top: 5px;
+  background-color: #CCCCCC;
+  border-radius: 3px;
+  font-size: 95%; }
+
+/* line 294, ../sass/retention.scss */
+table thead th img {
+  display: block;
+  margin: 5px auto 0px;
+  width: 24px; }
+
+/* line 300, ../sass/retention.scss */
+table td {
+  border: 1px solid #DDDDDD;
+  text-align: center;
+  width: 12.5%; }
+
+/* line 305, ../sass/retention.scss */
+table#notAtRiskTable td {
+  padding: 8px 0px; }
+
+/* line 308, ../sass/retention.scss */
+table#notAtRiskTable td:first-child img {
+  margin-right: 5px; }
+
+/* line 311, ../sass/retention.scss */
+table tr td > div {
+  position: relative;
+  padding: 0px;
+  margin-bottom: -2px; }
+
+/* line 317, ../sass/retention.scss */
+table tr td > div a {
+  display: block; }
+
+/* line 321, ../sass/retention.scss */
+table tr td:first-child {
+  border-left: 0px;
+  text-align: left;
+  width: 25%; }
+
+/* line 326, ../sass/retention.scss */
+table tr td:last-child {
+  border-right: 0px; }
+
+/* line 330, ../sass/retention.scss */
+table .severe1 td {
+  background-color: #FFFFFF; }
+
+/* line 331, ../sass/retention.scss */
+table .severe2 td {
+  background-color: #F9F8F3; }
+
+/* line 332, ../sass/retention.scss */
+table .severe3 td {
+  background-color: #ECEBE7; }
+
+/* line 333, ../sass/retention.scss */
+table .severe4 td {
+  background-color: #FEF3F1; }
+
+/* line 336, ../sass/retention.scss */
+tr.selected.severe4 td,
+tr.severe4 td:hover {
+  background: #fef3f1;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fef3f1 1%, #efdcda 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fef3f1), color-stop(100%, #efdcda));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fef3f1 1%, #efdcda 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fef3f1 1%, #efdcda 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fef3f1 1%, #efdcda 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fef3f1 1%, #efdcda 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fef3f1', endColorstr='#efdcda',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 347, ../sass/retention.scss */
+tr.selected.severe3 td,
+tr.severe3 td:hover {
+  background: #ecebe7;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ecebe7 1%, #cecdca 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ecebe7), color-stop(100%, #cecdca));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ecebe7 1%, #cecdca 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ecebe7 1%, #cecdca 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ecebe7 1%, #cecdca 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ecebe7 1%, #cecdca 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecebe7', endColorstr='#cecdca',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 358, ../sass/retention.scss */
+tr.selected.severe2 td,
+tr.severe2 td:hover {
+  background: #f9f8f3;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f9f8f3 1%, #eaeae5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f9f8f3), color-stop(100%, #eaeae5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f9f8f3 1%, #eaeae5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f9f8f3 1%, #eaeae5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f9f8f3 1%, #eaeae5 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f9f8f3 1%, #eaeae5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f8f3', endColorstr='#eaeae5',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 369, ../sass/retention.scss */
+tr.selected.severe1 td,
+tr.severe1 td:hover {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 1%, #f2f2f2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, white), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 1%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 1%, #f2f2f2 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 1%, #f2f2f2 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 1%, #f2f2f2 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 380, ../sass/retention.scss */
+table th.norules {
+  background: rgba(242, 242, 242, 0.5) !important; }
+
+/* line 383, ../sass/retention.scss */
+table tr.severe4 td.norules {
+  background: rgba(254, 243, 241, 0.5); }
+
+/* line 386, ../sass/retention.scss */
+table tr.severe3 td.norules {
+  background: rgba(236, 235, 231, 0.5); }
+
+/* line 389, ../sass/retention.scss */
+table tr.severe2 td.norules {
+  background: rgba(249, 248, 243, 0.5); }
+
+/* line 392, ../sass/retention.scss */
+table tr.severe1 td.norules {
+  background: rgba(255, 255, 255, 0.5); }
+
+/* line 396, ../sass/retention.scss */
+table td:first-child img {
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #CCC;
+  padding: 1px;
+  margin-left: 10px; }
+
+/* line 404, ../sass/retention.scss */
+table td .retention-details img {
+  background-color: transparent;
+  border: 0px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0; }
+
+/* line 414, ../sass/retention.scss */
+table .active,
+span.risk-active {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #FF4F0D;
+  margin: 0 auto;
+  -moz-transition-duration: .2s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: ease-in;
+  transition-duration: .2s;
+  transition-timing-function: ease-in; }
+
+/*table td:nth-child(2) .active { background-color: #029FA2; }
+table td:nth-child(3) .active { background-color: #741C48; }
+table td:nth-child(4) .active { background-color: #08377F; }
+table td:nth-child(5) .active { background-color: #D77123; }*/
+/* line 435, ../sass/retention.scss */
+table .expanded .active {
+  background-color: #DA0400;
+  box-shadow: 0px 0px 10px #DA0400; }
+
+/* line 440, ../sass/retention.scss */
+table .inactive,
+span.risk-inactive {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #AAAAAA;
+  margin: 0 auto;
+  top: 2px;
+  position: relative; }
+
+/* line 452, ../sass/retention.scss */
+span.risk-active,
+span.risk-inactive {
+  margin: 0 10px;
+  display: inline-block; }
+
+/* line 456, ../sass/retention.scss */
+span.risk-inactive {
+  margin: 0px 12.5px 5px; }
+
+/* line 461, ../sass/retention.scss */
+table .activeCell div:before,
+table .activeCell div:after {
+  border-color: transparent transparent #333333;
+  border-style: none solid solid;
+  border-width: 0px 10px 10px;
+  bottom: 0px;
+  content: "";
+  display: block;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute; }
+
+/* details box */
+/* line 474, ../sass/retention.scss */
+table tr.details-row td {
+  padding: 0; }
+
+/* line 477, ../sass/retention.scss */
+table tr.details-row td > div a {
+  padding: 0px;
+  display: inline; }
+
+/* line 481, ../sass/retention.scss */
+table .retention-details {
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 15px;
+  position: relative;
+  min-height: 160px; }
+
+/* line 490, ../sass/retention.scss */
+table .retention-details .arrow.col1:before,
+table .retention-details .arrow.col1:after {
+  left: 342px; }
+
+/* line 494, ../sass/retention.scss */
+table .retention-details .arrow.col2:before,
+table .retention-details .arrow.col2:after {
+  left: 490px; }
+
+/* line 498, ../sass/retention.scss */
+table .retention-details .arrow.col3:before,
+table .retention-details .arrow.col3:after {
+  left: 635px; }
+
+/* line 502, ../sass/retention.scss */
+table .retention-details .arrow.col4:before,
+table .retention-details .arrow.col4:after {
+  left: 768px; }
+
+/* line 505, ../sass/retention.scss */
+.retention-details .individual-rules {
+  float: left;
+  width: 60%;
+  position: relative; }
+
+/* line 510, ../sass/retention.scss */
+.retention-details .individual-rules h3 {
+  margin-bottom: 15px;
+  margin-top: 0px;
+  font-weight: normal;
+  font-size: 95%;
+  letter-spacing: .05em;
+  text-transform: uppercase; }
+
+/* line 518, ../sass/retention.scss */
+.retention-details .individual-rules li {
+  color: #CCCCCC;
+  padding-bottom: 15px;
+  padding-right: 35px; }
+
+/* line 523, ../sass/retention.scss */
+.retention-details .individual-rules a {
+  color: #17C5E9;
+  font-weight: normal; }
+
+/* line 527, ../sass/retention.scss */
+.retention-details .individual-rules li span.grade-rules {
+  font-weight: normal;
+  font-size: 95%;
+  margin-left: 5px; }
+
+/* line 534, ../sass/retention.scss */
+.retention-details .individual-rules li span.assignment-grade,
+.retention-details .individual-rules li span.submission-date,
+.retention-details .individual-rules li span.access-duration {
+  position: absolute;
+  right: 15%;
+  font-size: 110%;
+  color: #FFFFFF; }
+
+/* line 541, ../sass/retention.scss */
+.retention-details .overall-performance {
+  top: 23%;
+  padding: 15px;
+  position: absolute;
+  right: -2px;
+  width: 40%;
+  background-color: #222222;
+  border: 1px dashed #444444;
+  box-shadow: -2px 0 15px #222222;
+  border-right: 0px; }
+
+/* line 552, ../sass/retention.scss */
+.retention-details .overall-performance p {
+  font-size: 140%;
+  color: #AAA;
+  margin-bottom: 0.5em;
+  line-height: 140%; }
+
+/* line 558, ../sass/retention.scss */
+.retention-details .overall-performance em {
+  color: #FFFFFF;
+  font-style: normal; }
+
+/* line 562, ../sass/retention.scss */
+.retention-details .overall-performance a.action-link {
+  font-size: 75%;
+  color: #17C5E9;
+  display: block;
+  font-weight: normal; }
+
+/* line 568, ../sass/retention.scss */
+.retention-details .overall-performance p.average-comparison {
+  font-size: 100%; }
+
+/* line 572, ../sass/retention.scss */
+.retention-details .last-refresh-date {
+  position: absolute;
+  bottom: 12px;
+  right: 240px;
+  color: #CCC; }
+
+/* line 579, ../sass/retention.scss */
+.retention-details .action-buttons {
+  position: absolute;
+  bottom: 0px;
+  right: 0px; }
+
+/* line 584, ../sass/retention.scss */
+.retention-details .action-buttons button, .retention-details .action-buttons .nav > li > a {
+  background-color: #333333;
+  border: 0px;
+  padding: 10px 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5) inset;
+  color: #17C5E9;
+  cursor: pointer;
+  display: inline-block; }
+
+/* line 593, ../sass/retention.scss */
+.retention-details .action-buttons button img, .retention-details .action-buttons a img:first-child {
+  background-color: transparent;
+  border: 0px;
+  padding: 0;
+  height: 16px;
+  width: auto;
+  margin: 0; }
+
+/* line 601, ../sass/retention.scss */
+.retention-details .action-buttons button:first-child {
+  margin-right: -10px; }
+
+/* line 605, ../sass/retention.scss */
+.retention-details .action-buttons li {
+  margin: 0; }
+
+/* line 609, ../sass/retention.scss */
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font: 150% "Utilicons";
+  color: #CCC; }
+
+/* Students Monitor section */
+/* line 618, ../sass/retention.scss */
+ul.students-monitor {
+  margin-bottom: 20px; }
+
+/* line 621, ../sass/retention.scss */
+ul.students-monitor li {
+  width: 98%;
+  padding: 10px;
+  border: 1px solid #CCC;
+  background-color: #F7F7F7;
+  margin-bottom: 10px;
+  position: relative; }
+
+/* line 629, ../sass/retention.scss */
+ul.students-monitor li .profile img {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  height: 24px;
+  padding: 1px;
+  width: 24px;
+  position: absolute;
+  left: 10px; }
+
+/* line 638, ../sass/retention.scss */
+ul.students-monitor li .profile {
+  padding-left: 35px; }
+
+/* line 641, ../sass/retention.scss */
+ul.students-monitor li .profile a {
+  font-weight: bold; }
+
+/* line 644, ../sass/retention.scss */
+ul.students-monitor li .retention-rules {
+  margin-top: 12px; }
+
+/* line 647, ../sass/retention.scss */
+ul.students-monitor li .retention-rules p {
+  margin: 0; }
+
+/* line 651, ../sass/retention.scss */
+ul.students-monitor li .retention-rules span {
+  float: left;
+  width: 110px;
+  margin-right: 10px;
+  color: #666666;
+  font-size: 95%; }
+
+/* line 658, ../sass/retention.scss */
+ul.students-monitor li .retention-rules img {
+  margin-bottom: 2px;
+  margin-left: -16px; }
+
+/* line 662, ../sass/retention.scss */
+.unwatch-link {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font: 125% "Utilicons";
+  color: #CCC;
+  opacity: 0; }
+
+/* line 672, ../sass/retention.scss */
+.students-monitor li:hover .unwatch-link,
+.students-monitor li:focus .unwatch-link {
+  opacity: 1; }
+
+/* Scaled down version */
+/* line 677, ../sass/retention.scss */
+.students-monitor.scaled {
+  width: 100%; }
+
+/* line 680, ../sass/retention.scss */
+.students-monitor.scaled li {
+  width: 38%;
+  margin-right: 2%;
+  min-height: 35px;
+  float: left; }
+
+/* line 686, ../sass/retention.scss */
+.students-monitor.scaled li.opened {
+  width: 90%;
+  margin-right: 0px;
+  min-height: 0px; }
+
+/* Other Rules */
+/* line 693, ../sass/retention.scss */
+.other-rule {
+  margin-bottom: 25px;
+  margin-top: 20px; }
+
+/* line 697, ../sass/retention.scss */
+.other-rule .rule-label {
+  display: block;
+  color: #666;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #DEDEDE;
+  height: 2px;
+  margin-bottom: 15px; }
+
+/* line 707, ../sass/retention.scss */
+.other-rule .rule-label span {
+  background-color: #FFFFFF;
+  padding-right: 10px; }
+
+/* line 711, ../sass/retention.scss */
+.other-rule .rule-details {
+  float: left;
+  width: 66%;
+  line-height: 150%; }
+
+/* line 717, ../sass/retention.scss */
+.other-rule .rule-details em {
+  display: block;
+  font-style: normal;
+  color: #333; }
+
+/* line 723, ../sass/retention.scss */
+.other-rule .students-count {
+  float: right;
+  width: 30%;
+  text-align: right;
+  color: #999; }
+
+/* line 729, ../sass/retention.scss */
+.other-rule .students-count a {
+  font-weight: bold;
+  border-bottom: 1px dotted #01758C; }
+
+/* Instructor Engagement */
+/* line 735, ../sass/retention.scss */
+.floated-header {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+/* line 741, ../sass/retention.scss */
+.last-login {
+  float: right;
+  text-align: right;
+  color: #666666; }
+
+/* line 749, ../sass/retention.scss */
+.last-login span {
+  color: #333333; }
+
+/* line 753, ../sass/retention.scss */
+.instructor-engagement {
+  position: relative;
+  width: 100%;
+  -webkit-column-gap: 50px;
+  -webkit-column-rule: 1px solid #ccc; }
+
+/* line 765, ../sass/retention.scss */
+.instructor-engagement .section {
+  margin-bottom: 10px;
+  padding-top: 1px;
+  /*border-right: 1px solid #E4E4E4;
+  box-shadow: -1px 0px 1px #FFFFFF inset;*/
+  -webkit-break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid; }
+
+/* line 781, ../sass/retention.scss */
+.instructor-engagement .section h4 {
+  margin-top: 0px;
+  text-align: left;
+  font-size: 100%;
+  font-weight: 600;
+  color: #666; }
+
+/* line 793, ../sass/retention.scss */
+.instructor-engagement .section h4 span {
+  padding-right: 10px; }
+
+/* line 798, ../sass/retention.scss */
+.instructor-engagement .section h4 span.tooltipContainer-bot {
+  margin-left: 2px;
+  padding-right: 0px;
+  text-transform: none;
+  font-family: "Lucia Grande", Arial, sans-serif; }
+
+/* line 805, ../sass/retention.scss */
+.instructor-engagement .section h4 span.tooltipContainer-bot:hover {
+  cursor: help; }
+
+/* line 809, ../sass/retention.scss */
+.instructor-engagement .section-content {
+  position: relative; }
+
+/* line 812, ../sass/retention.scss */
+.instructor-engagement .section:last-child {
+  border-right: 0px solid #E4E4E4;
+  box-shadow: none;
+  padding-right: 0px;
+  margin-right: 0px; }
+
+/* line 819, ../sass/retention.scss */
+.instructor-engagement .section p {
+  font-size: 90%;
+  color: #666;
+  margin-bottom: 10px; }
+
+/* line 825, ../sass/retention.scss */
+.instructor-engagement .section .course-design-content {
+  display: block;
+  font-size: 115%;
+  color: #333;
+  margin: 8px 0px; }
+
+/* line 832, ../sass/retention.scss */
+.instructor-engagement .section .announcement {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  /*border-bottom: 1px solid #E4E4E4;
+  box-shadow: 0px -1px 1px #FFFFFF inset;*/ }
+
+/* line 838, ../sass/retention.scss */
+.instructor-engagement .section .announcement .count em {
+  /*font-weight: bold;
+  font-size: 250%;
+  display: block;
+  text-align: center;
+  font-style: normal;
+  color: #333333;
+  margin: 12px 0px;*/
+  font-size: 115%; }
+
+/* line 849, ../sass/retention.scss */
+.instructor-engagement .section .announcement .excerpt {
+  font-style: italic;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  position: relative;
+  padding: 0 0 0 20px; }
+
+/* line 857, ../sass/retention.scss */
+.instructor-engagement .section .announcement .excerpt:before {
+  content: "\275D";
+  color: #AAA;
+  position: absolute;
+  font-weight: normal;
+  font-size: 160%;
+  line-height: 0;
+  top: 6px;
+  left: 0;
+  margin-right: 3px; }
+
+/* line 869, ../sass/retention.scss */
+.instructor-engagement .section button {
+  margin: 15px auto 0;
+  display: block; }
+
+/* line 874, ../sass/retention.scss */
+.instructor-engagement .section .collaboration p {
+  text-align: left;
+  margin-bottom: 31px;
+  font-size: 100%;
+  position: relative;
+  line-height: 135%;
+  height: 18px; }
+
+/* line 885, ../sass/retention.scss */
+.instructor-engagement .section .collaboration em,
+.instructor-engagement .section .assessment em,
+.instructor-engagement .section .announcement em,
+.instructor-engagement .section .count {
+  position: absolute;
+  text-align: right;
+  right: 0px;
+  top: 0px;
+  font-style: normal;
+  color: #333333; }
+
+/* line 895, ../sass/retention.scss */
+.instructor-engagement .section .count {
+  text-align: right;
+  width: 70px; }
+
+/* line 899, ../sass/retention.scss */
+.instructor-engagement .section .assessment .count {
+  width: 45px; }
+
+/* line 902, ../sass/retention.scss */
+.instructor-engagement .section .count img {
+  height: 14px;
+  margin: 0px 1px 1px 5px; }
+
+/* line 906, ../sass/retention.scss */
+.instructor-engagement .section .collaboration em.empty {
+  font-weight: normal;
+  font-style: italic;
+  color: #666;
+  font-size: 90%; }
+
+/* line 912, ../sass/retention.scss */
+.instructor-engagement .section .collaboration span {
+  display: block;
+  font-size: 90%; }
+
+/* line 917, ../sass/retention.scss */
+.instructor-engagement .section .assessment li {
+  margin-bottom: 15px;
+  position: relative;
+  line-height: 135%;
+  padding-right: 45px; }
+
+/* line 923, ../sass/retention.scss */
+.instructor-engagement .section .assessment .more-link {
+  text-align: right;
+  padding-right: 13px; }
+
+/* line 928, ../sass/retention.scss */
+.instructor-engagement .section .assessment span {
+  display: block;
+  font-size: 90%; }
+
+/* Lightbox */
+/* line 934, ../sass/retention.scss */
+#lightboxOverlay {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000; }
+
+/* line 943, ../sass/retention.scss */
+.lightbox-container {
+  max-height: 600px;
+  overflow: auto;
+  margin-left: -300px;
+  overflow: visible;
+  padding: 18px;
+  width: 600px;
+  z-index: 1001;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  left: 50%;
+  margin-top: -200px;
+  padding: 25px;
+  position: fixed;
+  top: 50%; }
+
+/* line 960, ../sass/retention.scss */
+.lightbox-container h4 {
+  margin-bottom: 10px;
+  font-size: 150%;
+  font-weight: normal; }
+
+/* line 965, ../sass/retention.scss */
+.lightbox-container p.rules {
+  color: #666666;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+  background-color: #F0F0F0;
+  padding: 10px 20px;
+  border-radius: 5px; }
+
+/* line 972, ../sass/retention.scss */
+.lightbox-container p.rules em {
+  font-weight: bold;
+  color: #333333;
+  font-style: normal; }
+
+/* line 977, ../sass/retention.scss */
+.lightbox-container .meeting-rule {
+  margin: 20px 50px; }
+
+/* line 980, ../sass/retention.scss */
+.lightbox-container .meeting-rule li {
+  height: 50px;
+  padding-top: 15px;
+  border-top: 1px solid #EEEEEE; }
+
+/* line 985, ../sass/retention.scss */
+.lightbox-container .meeting-rule li.selected {
+  background-color: #F4F4F4; }
+
+/* line 988, ../sass/retention.scss */
+.lightbox-container .meeting-rule input {
+  margin: 0px 10px; }
+
+/* line 991, ../sass/retention.scss */
+.lightbox-container .meeting-rule img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px; }
+
+/* line 996, ../sass/retention.scss */
+.lightbox-container .meeting-rule span {
+  float: right;
+  width: 30%;
+  height: 36px;
+  padding-left: 20px;
+  border-left: 1px solid #EEEEEE;
+  font-size: 90%;
+  color: #999999;
+  line-height: 150%; }
+
+/* line 1006, ../sass/retention.scss */
+.lightbox-container .meeting-rule span em {
+  font-size: 140%;
+  color: #333;
+  display: block;
+  font-style: normal; }
+
+/* line 1012, ../sass/retention.scss */
+.lightbox-container .meeting-rule.late span em {
+  color: #DF0100; }
+
+/* line 1015, ../sass/retention.scss */
+.lightbox-container button {
+  background-color: #EEEEEE;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px 3px 3px 3px;
+  cursor: pointer;
+  float: right;
+  color: #333;
+  margin-top: 5px;
+  padding: 5px 10px; }
+
+/* line 1025, ../sass/retention.scss */
+.lightbox-container button img {
+  width: 24px; }
+
+/* line 1028, ../sass/retention.scss */
+.close-lightbox {
+  float: right;
+  right: -7px;
+  top: -7px;
+  background-color: #555555;
+  border: 2px solid #EEEEEE;
+  border-radius: 100px 100px 100px 100px;
+  color: #EEEEEE;
+  height: 20px;
+  line-height: 17px;
+  position: absolute;
+  text-align: center;
+  width: 20px; }
+
+/* line 1042, ../sass/retention.scss */
+.close-lightbox img {
+  margin-top: 5px;
+  height: 10px;
+  width: 10px; }
+
+/* Empty Message */
+/* line 1050, ../sass/retention.scss */
+.empty-message,
+.no-risks td {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem; }
+
+/* line 1060, ../sass/retention.scss */
+.no-risks td button {
+  display: block;
+  margin: 8px auto 0; }
+
+/* line 1065, ../sass/retention.scss */
+.empty-message span {
+  display: block;
+  font-weight: normal;
+  font-size: 90%;
+  padding-top: 10px; }
+
+/* line 1071, ../sass/retention.scss */
+.empty-message img {
+  width: 25px;
+  margin-top: 5px; }
+
+/* line 1075, ../sass/retention.scss */
+.instructor-engagement .empty-message {
+  padding-top: 30%;
+  background-color: transparent; }
+
+/* line 1079, ../sass/retention.scss */
+table tr.no-risks td {
+  height: 200px;
+  background-color: #FAFAFA;
+  text-align: center; }
+
+/* line 1084, ../sass/retention.scss */
+table .no-risks td img {
+  display: block;
+  width: 50px;
+  height: auto;
+  border: 0;
+  background: none;
+  margin: 0 auto; }
+
+/* line 1095, ../sass/retention.scss */
+.tooltip {
+  display: none;
+  word-wrap: break-word;
+  cursor: normal;
+  font-size: 13px;
+  line-height: 1.25;
+  padding: .9em 1.2em 1.1em;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 99;
+  width: 170px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  -moz-opacity: .9;
+  opacity: .9;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white !important;
+  color: black !important;
+  text-shadow: none;
+  font-weight: 400;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8); }

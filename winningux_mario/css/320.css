@@ -1,0 +1,35 @@
+/* line 1, ../sass/320.scss */
+.outline-inventory {
+  -webkit-column-count: 1; }
+
+/*
+.bb-chrome {
+	margin-top: 0;
+}
+*/
+/* line 15, ../sass/320.scss */
+.global-nav {
+  top: 0; }
+
+/* line 26, ../sass/320.scss */
+.flyout-on.user-name a .name-text {
+  display: inline-block; }
+
+/* line 30, ../sass/320.scss */
+.global-nav-flyout {
+  top: 0;
+  width: 100%; }
+
+/* line 35, ../sass/320.scss */
+.global-nav > div.user-name.flyout-on {
+  margin-right: 0px; }
+
+/* line 49, ../sass/320.scss */
+.bb-content-holder.has-menu .content,
+.bb-content-holder.has-menu .outline,
+.bb-outline-holder.has-menu .content,
+.bb-outline-holder.has-menu .outline {
+  margin-left: 0;
+  -webkit-transition: margin-left .2s ease-in-out;
+  -moz-transition: margin-left .2s ease-in-out;
+  transition: margin-left .2s ease-in-out; }

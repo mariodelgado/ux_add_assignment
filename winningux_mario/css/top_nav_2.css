@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* $base-line-height: 		floor($base-font-size * 1.61803); */
+/* Pictos
+ * -------------------------- */
+/*
+@font-face {
+	font-family: 		"Pictos";
+	src: 				url('../fonts/pictos-web.eot');
+	src: 				local('☺'), 
+  						url('../fonts/pictos-web.woff') format('woff'), 
+  						url('../fonts/pictos-web.ttf') format('truetype'), 
+  						url('../fonts/pictos-web.svg#webfontphKv1xv9') format('svg');
+  	-webkit-font-smoothing: antialiased;
+}
+*/
+/* FontAwesome
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot?v=3.2.1");
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix&v=3.2.1") format("embedded-opentype"), url("../fonts/FontAwesome/fontawesome-webfont.woff?v=3.2.1") format("woff"), url("../fonts/FontAwesome/fontawesome-webfont.ttf?v=3.2.1") format("truetype"), url("../fonts/FontAwesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 7, ../sass/top_nav_2.scss */
+.hide-mobile,
+.hide-phone,
+.hide-tablet,
+.hide-desktop {
+  display: none !important; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  /* line 12, ../sass/top_nav_2.scss */
+  .branding {
+    display: none;
+    height: 0;
+    overflow: hidden; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  /* line 21, ../sass/top_nav_2.scss */
+  .bb-chrome {
+    margin-top: 0 !important; } }
+/* line 32, ../sass/top_nav_2.scss */
+.nav-global {
+  background: 494949;
+  width: 100%;
+  text-align: center;
+  height: 40px; }
+  /* line 38, ../sass/top_nav_2.scss */
+  .nav-global a {
+    color: white; }
+  /* line 42, ../sass/top_nav_2.scss */
+  .nav-global [class*="icon"] {
+    vertical-align: 5px; }
+
+/* line 53, ../sass/top_nav_2.scss */
+.user-name a .name-text {
+  display: inline-block; }
+
+/* line 57, ../sass/top_nav_2.scss */
+.user-name span {
+  margin: 0 4px 0 0; }
+
+/* line 61, ../sass/top_nav_2.scss */
+.logout {
+  position: absolute;
+  right: 0;
+  border: 0;
+  margin: 0;
+  color: #fff; }
+
+/* line 70, ../sass/top_nav_2.scss */
+.nav-system-learn {
+  position: absolute;
+  width: 260px;
+  background: paleturquoise;
+  left: -260px; }
+
+/* line 81, ../sass/top_nav_2.scss */
+.course-name-2 > *,
+.user-name > *,
+.nav-global > * {
+  display: inline-block; }
+
+/* line 87, ../sass/top_nav_2.scss */
+.has-menu .bb-content-nav,
+.has-menu-peek .bb-content-nav.display {
+  top: 80px;
+  border: 0;
+  background: #fff; }
+
+/* line 95, ../sass/top_nav_2.scss */
+.course-name-2 {
+  padding: 0 9px; }
+  /* line 98, ../sass/top_nav_2.scss */
+  .course-name-2 [class*="icon"] {
+    vertical-align: 5px; }
+
+/* line 105, ../sass/top_nav_2.scss */
+.bb-content-holder,
+.bb-outline-holder {
+  margin-top: 127px; }
+
+/* line 111, ../sass/top_nav_2.scss */
+.bb-chrome-header nav {
+  background: #494949; }
+
+/* line 117, ../sass/top_nav_2.scss */
+.nav-local {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 0 3px;
+  height: 40px; }
+  /* line 123, ../sass/top_nav_2.scss */
+  .nav-local .course-name-2 > a,
+  .nav-local .cross-nav > a {
+    color: white; }
+
+/* line 135, ../sass/top_nav_2.scss */
+.course-tab-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 242px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 12px; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* line 135, ../sass/top_nav_2.scss */
+    .course-tab-text {
+      width: 698px; } }
+
+/* line 151, ../sass/top_nav_2.scss */
+.role-switch {
+  display: none; }
+
+/* line 156, ../sass/top_nav_2.scss */
+.page-title {
+  background: #fff;
+  position: relative;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 9px 12px; }
+  /* line 162, ../sass/top_nav_2.scss */
+  .page-title h2 {
+    margin: 0;
+    letter-spacing: -1px;
+    line-height: 1.6;
+    font-size: 20px; }
+
+/* line 173, ../sass/top_nav_2.scss */
+.course-xnav {
+  position: fixed;
+  top: 38px;
+  right: -280px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  bottom: 0;
+  width: 280px;
+  -webkit-transition: right .2s linear, box-shadow .2s linear; }
+
+/* line 190, ../sass/top_nav_2.scss */
+.show-courses .course-xnav {
+  right: 0;
+  box-shadow: -100px 0 0 rgba(0, 0, 0, 0.5), -1px 0 3px rgba(0, 0, 0, 0.3);
+  top: 40px !important;
+  left: auto !important;
+  -webkit-transition: right .2s linear, box-shadow .2s linear; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* line 190, ../sass/top_nav_2.scss */
+    .show-courses .course-xnav {
+      box-shadow: -10px 0 0 rgba(0, 0, 0, 0.5), -1px 0 3px rgba(0, 0, 0, 0.3); } }
+/* line 205, ../sass/top_nav_2.scss */
+.show-courses .bb-payload,
+.show-courses .nav-local,
+.show-courses .page-title {
+  left: -280px;
+  position: relative;
+  -webkit-transition: left .2s linear; }
+
+/* line 215, ../sass/top_nav_2.scss */
+.show-places .nav-system-learn {
+  width: 280px;
+  background: #fff;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 2000;
+  position: fixed;
+  -webkit-transition: left .2s linear, box-shadow .2s linear;
+  box-shadow: 100px 0 0 rgba(0, 0, 0, 0.5), 1px 0 3px rgba(0, 0, 0, 0.3);
+  color: #000;
+  padding: 24px !important; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* line 215, ../sass/top_nav_2.scss */
+    .show-places .nav-system-learn {
+      box-shadow: 10px 0 0 rgba(0, 0, 0, 0.5), -1px 0 3px rgba(0, 0, 0, 0.3); } }
+  /* line 234, ../sass/top_nav_2.scss */
+  .show-places .nav-system-learn li {
+    display: block; }
+    /* line 237, ../sass/top_nav_2.scss */
+    .show-places .nav-system-learn li a {
+      padding: 4px 0;
+      color: #1874a4;
+      text-align: left;
+      display: block; }
+/* line 246, ../sass/top_nav_2.scss */
+.show-places .bb-chrome {
+  left: 280px;
+  -webkit-transition: left .2s linear, box-shadow .2s linear;
+  box-shadow: 100px 0 0 rgba(0, 0, 0, 0.5), 1px 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: left .2s linear; }
+
+/* line 255, ../sass/top_nav_2.scss */
+.has-menu .bb-content-nav {
+  box-shadow: 100px 0 0 rgba(0, 0, 0, 0.5), 1px 0 3px rgba(0, 0, 0, 0.3) !important;
+  width: 280px; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* line 255, ../sass/top_nav_2.scss */
+    .has-menu .bb-content-nav {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      box-shadow: none !important;
+      border-right: 1px solid #ccc;
+      z-index: 100;
+      overflow: auto; } }
+/* line 274, ../sass/top_nav_2.scss */
+.has-menu .bb-payload,
+.has-menu .page-title {
+  -webkit-transform: translateX(280px);
+  position: relative;
+  margin-left: 0 !important; }
+
+/* line 287, ../sass/top_nav_2.scss */
+.bb-payload,
+.page-title {
+  position: relative; }
+
+/*
+	.bb-chrome {
+		
+		-webkit-transition: left .6s linear;
+	}
+	
+	.nav-system-learn {
+		-webkit-transition: left .2s linear, box-shadow .2s linear;
+	}
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 308, ../sass/top_nav_2.scss */
+  .has-menu-peek .bb-content-nav {
+    width: 0px; } }
+/* line 313, ../sass/top_nav_2.scss */
+.system-tabs-wrapper a.current-tab {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-top: 6px;
+  color: #fff;
+  line-height: 1; }
+
+/* line 327, ../sass/top_nav_2.scss */
+.panel-global {
+  padding: 0 24px;
+  overflow: auto; }
+
+/* line 333, ../sass/top_nav_2.scss */
+.nav-panel a span {
+  border: 0 !important; }

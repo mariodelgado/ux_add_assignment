@@ -1,0 +1,179 @@
+/* line 7, ../sass/bbdocs.scss */
+html {
+  background: #f0f0f0;
+  background: url("../images/handmadepaper.png") repeat 0 0; }
+
+/* line 12, ../sass/bbdocs.scss */
+.bb-box {
+  width: 100%; }
+
+/* line 16, ../sass/bbdocs.scss */
+.bb-payload {
+  margin: 0 auto; }
+
+@media only screen and (min-width: 1340px) {
+  /* line 22, ../sass/bbdocs.scss */
+  .bb-payload {
+    width: 1320px; } }
+/* line 29, ../sass/bbdocs.scss */
+.bb-chrome,
+.bb-content-holder,
+.bb-outline-holder {
+  box-shadow: none;
+  background: transparent; }
+
+/* line 35, ../sass/bbdocs.scss */
+.system-nav {
+  border-bottom: 0; }
+
+/* line 39, ../sass/bbdocs.scss */
+.sticky {
+  border: 0;
+  box-shadow: 0 3px 0 -3px rgba(0, 0, 0, 0.8);
+  width: 100%; }
+
+/* line 45, ../sass/bbdocs.scss */
+code, pre {
+  font-size: 13px;
+  line-height: 19px;
+  white-space: pre;
+  white-space: pre-wrap; }
+
+/* line 51, ../sass/bbdocs.scss */
+code, pre {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 13px;
+  line-height: 19px;
+  color: #333333; }
+
+/* line 60, ../sass/bbdocs.scss */
+code {
+  padding: 2px 4px;
+  border-radius: 3px;
+  background: #DEE4A0; }
+
+/* line 66, ../sass/bbdocs.scss */
+.lineup {
+  display: inline-block; }
+
+/* line 71, ../sass/bbdocs.scss */
+main > section {
+  margin-bottom: 12px;
+  border-bottom: 1px solid #dddddd; }
+
+/* line 76, ../sass/bbdocs.scss */
+.bbdoc-example {
+  border: 1px solid #ddd;
+  padding: 24px;
+  position: relative;
+  margin-bottom: 24px;
+  background: #fff; }
+  /* line 83, ../sass/bbdocs.scss */
+  .bbdoc-example.background {
+    background: #eee; }
+  /* line 87, ../sass/bbdocs.scss */
+  .bbdoc-example.background-transparent {
+    background: transparent; }
+  /* line 91, ../sass/bbdocs.scss */
+  .bbdoc-example .bbdoc-example-group {
+    margin-bottom: 24px;
+    position: relative; }
+    /* line 96, ../sass/bbdocs.scss */
+    .bbdoc-example .bbdoc-example-group.lineup {
+      padding-right: 24px; }
+    /* line 101, ../sass/bbdocs.scss */
+    .bbdoc-example .bbdoc-example-group .button-toggle + .button-toggle,
+    .bbdoc-example .bbdoc-example-group .toggle-wrap + .toggle-wrap {
+      margin-left: 24px; }
+    /* line 107, ../sass/bbdocs.scss */
+    .bbdoc-example .bbdoc-example-group:before {
+      content: attr(group-label);
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-transform: uppercase;
+      font-weight: 200;
+      top: -12px; }
+  /* line 118, ../sass/bbdocs.scss */
+  .bbdoc-example + .code-sample {
+    margin-top: -25px;
+    padding: 6px 14px;
+    border: 1px solid #ddd;
+    margin-bottom: 24px; }
+
+/* line 126, ../sass/bbdocs.scss */
+h3.bbdoc {
+  margin-bottom: 12px;
+  font-weight: 400; }
+
+/* line 133, ../sass/bbdocs.scss */
+h4.bbdoc {
+  margin-bottom: 12px;
+  color: #888;
+  font-weight: 400; }
+
+/* line 139, ../sass/bbdocs.scss */
+.system-tabs-wrapper.bbdoc {
+  width: 100%;
+  margin: 0;
+  background: #333; }
+  /* line 144, ../sass/bbdocs.scss */
+  .system-tabs-wrapper.bbdoc li a {
+    padding: 9px 18px;
+    color: #bbb; }
+  /* line 149, ../sass/bbdocs.scss */
+  .system-tabs-wrapper.bbdoc li.active a {
+    color: #fff; }
+
+/* line 158, ../sass/bbdocs.scss */
+#bb_content_nav {
+  position: relative;
+  top: 0;
+  width: 220px;
+  left: 0;
+  visibility: visible;
+  opacity: 1; }
+  /* line 166, ../sass/bbdocs.scss */
+  #bb_content_nav:hover {
+    box-shadow: none; }
+
+/* line 171, ../sass/bbdocs.scss */
+.status-toggle {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 6px; }
+
+/* line 178, ../sass/bbdocs.scss */
+#dropdown .dropdown {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto; }
+
+/* line 185, ../sass/bbdocs.scss */
+.add-action {
+  position: static;
+  opacity: 1; }
+
+/* line 192, ../sass/bbdocs.scss */
+.is-editable .add-action {
+  opacity: 0; }
+
+/* line 201, ../sass/bbdocs.scss */
+.the-icons .bbdoc-column {
+  line-height: 28px;
+  text-align: left; }
+/* line 206, ../sass/bbdocs.scss */
+.the-icons .span-3 [class^="icon-"]:before {
+  font-size: 22px;
+  vertical-align: -4px;
+  margin-right: 12px;
+  min-width: 22px;
+  text-align: center; }
+/* line 214, ../sass/bbdocs.scss */
+.the-icons code {
+  font-size: 11px; }
+/* line 219, ../sass/bbdocs.scss */
+.the-icons a {
+  text-decoration: none;
+  color: #000; }

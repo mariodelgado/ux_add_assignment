@@ -1,0 +1,635 @@
+/* Generic */
+body {
+font-family:"Lucida grande",Arial,Verdana,sans-serif; font-size:11px;
+scrollbar-3dlight-color:#F0F0EE;
+scrollbar-arrow-color:#676662;
+scrollbar-base-color:#F0F0EE;
+scrollbar-darkshadow-color:#DDDDDD;
+scrollbar-face-color:#E0E0DD;
+scrollbar-highlight-color:#F0F0EE;
+scrollbar-shadow-color:#F0F0EE;
+scrollbar-track-color:#F5F5F5;
+padding:0;
+margin:8px 8px 0 8px;
+}
+
+html {
+background: url(img/dialogBG.png) repeat #7d7e7d;
+color:#333;
+}
+
+input{color:#333;}
+.reversedText {color:#eee;}
+
+td {font-family:"Lucida grande",Arial,Verdana,sans-serif; font-size:12px;}
+textarea {resize:none;outline:none;}
+a:link, a:visited {color:black;}
+a:hover {color:#2B6FB6;}
+.nowrap {white-space: nowrap}
+
+/* Forms */
+fieldset {
+	border: 1px solid #919B9C;
+	font-size: 12px;
+	margin: 6px 0 15px;
+	padding: 4px 10px 14px;
+}
+legend {color:#2B6FB6; font-weight:bold;}
+label.msg {display:none;}
+label.invalid {color:#EE0000; display:inline;}
+input.invalid {border:1px solid #EE0000;}
+input {background:#FFF; border:1px solid #bbb;}
+input, select, textarea {font-family:"Lucida grande",Arial,Verdana,sans-serif; font-size:12px;}
+input, select, textarea {border:1px solid #999; -moz-border-radius: 2px;
+border-radius: 2px;}
+input {
+	background-color: #F0F0F4;
+}
+input.radio {border:1px none #000000; background:transparent; vertical-align:middle;}
+input.checkbox {border:1px none #000000; background:transparent; vertical-align:middle;}
+.input_noborder {border:0;}
+
+/* Buttons */
+#insert, #cancel, input.button, .updateButton {
+margin:0 0 0 5px;
+padding:0;
+min-width:94px; /* Bb code to fix LRN-58251 */
+cursor:pointer;
+cursor: hand;
+padding-bottom:2px;
+float:left;
+background: #F0F0F4; /* Old browsers */
+background: -moz-linear-gradient(top, #F0F0F4 0%, #E8E8EA 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0F4), color-stop(100%,#E8E8EA)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #F0F0F4 0%,#E8E8EA 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #F0F0F4 0%,#E8E8EA 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #F0F0F4 0%,#E8E8EA 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0F0F4', endColorstr='#E8E8EA',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #F0F0F4 0%,#E8E8EA 100%); /* W3C */
+border: 1px solid #ccc;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+#insert:hover, #cancel:hover, input.button:hover, .updateButton:hover{
+	background: #fff;
+}
+
+
+#insert, #cancel {float:right;}
+#replaceBtn{ margin-left: 0px;}
+
+
+#imagepackage_localBrowse, #imagepackage_csBrowse{
+	background: #F0F0EE; /* Old browsers */
+	background: -moz-linear-gradient(top, #F0F0EE 0%, #C1C1C1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0EE), color-stop(100%,#C1C1C1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #F0F0EE 0%,#C1C1C1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #F0F0EE 0%,#C1C1C1 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #F0F0EE 0%,#C1C1C1 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0F0EE', endColorstr='#C1C1C1',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #F0F0EE 0%,#C1C1C1 100%); /* W3C */
+	border: 1px solid #ccc;
+	width: auto;
+	height: 22px;
+	font-size: 12px;
+	padding: 0 4px;
+	margin: 5px 0 11px;
+}
+
+/* Browse */
+a.pickcolor, a.browse {text-decoration:none}
+a.browse span {display:block; width:20px; height:18px; background:url(img/icons.gif) -860px 0; border:1px solid #FFF; margin-left:1px;}
+.mceOldBoxModel a.browse span {width:22px; height:20px;}
+a.browse:hover span {border:1px solid #0A246A; background-color:#B2BBD0;}
+a.browse span.disabled {border:1px solid white; opacity:0.3; -ms-filter:'alpha(opacity=30)'; filter:alpha(opacity=30)}
+a.browse:hover span.disabled {border:1px solid white; background-color:transparent;}
+a.pickcolor span {display:block; width:20px; height:16px; background:url(img/icons.gif) -840px 0; margin-left:2px;}
+.mceOldBoxModel a.pickcolor span {width:21px; height:17px;}
+a.pickcolor:hover span {background-color:#B2BBD0;}
+a.pickcolor:hover span.disabled {}
+
+/* Charmap */
+table.charmap {border:1px solid #AAA; text-align:center}
+td.charmap, #charmap a {background-color: #efefef; width:18px; height:18px; color:#000; border:1px solid #AAA; text-align:center; font-size:12px; vertical-align:middle; line-height: 18px;}
+#charmap a {display:block; color:#777; text-decoration:none; border:0}
+#charmap a:hover {background:#CCC; color:#000}
+#charmap #codeN {color: #eee; font-size:12px; font-family:Arial,Helvetica,sans-serif; text-align:center}
+#charmap #codeV {background-color: #efefef; font-size:40px; height:80px; border:1px solid #AAA; text-align:center}
+
+/* Source */
+.wordWrapCode {vertical-align:middle; border:1px none #000000; background:transparent;}
+.mceActionPanel {margin-top:5px;}
+
+/* Tabs classes */
+.tabs {
+  height: auto;
+  line-height: normal;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  bottom: -1px;
+}
+.tabs ul {margin:0; padding:0; list-style:none;}
+.tabs li {float:left; margin:0 2px 0 0; padding:0 0 0 10px; line-height:23px; height:24px; display:block; border:1px solid #919B9C; border-bottom:none !important;
+	background: #eaeaea; /* Old browsers */
+	background: -moz-linear-gradient(top, #eaeaea 47%, #e5e5e5 62%, #cdcdcd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(47%, #eaeaea),
+		color-stop(62%, #e5e5e5), color-stop(100%, #cdcdcd) );
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eaeaea 47%, #e5e5e5 62%, #cdcdcd 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eaeaea 47%, #e5e5e5 62%, #cdcdcd 100%);
+	/* Opera11.10+ */
+	background: -ms-linear-gradient(top, #eaeaea 47%, #e5e5e5 62%, #cdcdcd 100%);
+	/* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(    startColorstr='#eaeaea',
+		endColorstr='#cdcdcd', GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #eaeaea 47%, #e5e5e5 62%, #cdcdcd 100%);
+	/* W3C */
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	-webkit-box-shadow: inset 0px -2px 2px #bbb;
+	-moz-box-shadow: inset 0px -2px 2px #bbb;
+	box-shadow: inset 0px -2px 2px #bbb; 
+}
+
+.tabs li.current {
+margin-right:2px;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #f9f9f9 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f9f9f9 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f9f9f9 0%,#ffffff 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #f9f9f9 0%,#ffffff 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #f9f9f9 0%,#ffffff 100%); /* W3C */
+outline: 0;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+}
+
+.tabs span {float:left; display:block; padding:0px 10px 0 0;}
+.tabs .current span {}
+.tabs a {text-decoration:none; font-family:Verdana, Arial; font-size:12px;}
+.tabs a:link, .tabs a:visited, .tabs a:hover {color:black;}
+
+/* Panels */
+.panel_wrapper div.panel {display:none;}
+.panel_wrapper div.current {display:block; width:100%; height:300px; overflow:visible;}
+.panel_wrapper {border:1px solid #919B9C; padding:10px; padding-top:5px; clear:both; background:white;}
+
+/* Columns */
+.column {float:left;}
+.properties {width:100%;}
+.properties .column1 {}
+.properties .column2 {text-align:left;}
+
+/* Titles */
+h1, h2, h3, h4 {color:#2B6FB6; margin:0; padding:0; padding-top:5px;}
+h3 {font-size:14px;}
+.title {font-size:12px; font-weight:bold; color:#2B6FB6; float:left;}  
+.wrapline{float:right;} 
+
+/* Dialog specific */
+#link .panel_wrapper, #link div.current {height:125px;}
+#image .panel_wrapper, #image div.current {height:200px;}
+#plugintable thead {background: none repeat scroll 0 0 #EEEEEE;
+color: #777777;
+font-weight: bold;}
+#plugintable, #about #plugintable td {border-collapse: collapse;
+border-top: 1px solid #EEEEEE;
+padding: 8px;}
+#plugintable {width:96%; margin-top:10px;}
+#pluginscontainer {height:290px; overflow:auto;}
+#colorpicker #preview {float:right; width:50px; height:14px;line-height:1px; border:1px solid black; margin-left:5px;}
+#colorpicker #colors {float:left; border:1px solid gray; cursor:crosshair;}
+#colorpicker #light {border:1px solid gray; margin-left:5px; float:left;width:15px; height:150px; cursor:crosshair;}
+#colorpicker #light div {overflow:hidden;}
+#colorpicker #previewblock {float:right; padding-left:10px; height:20px;}
+#colorpicker .panel_wrapper div.current {height:175px;}
+#colorpicker #namedcolors {width:150px;}
+#colorpicker #namedcolors a {display:block; float:left; width:10px; height:10px; margin:1px 1px 0 0; overflow:hidden;}
+#colorpicker #colornamecontainer {margin-top:5px;}
+#colorpicker #picker_panel fieldset {margin:auto;width:325px;}
+
+.helphelp{
+	border-bottom: medium none;
+	color: #666666;
+	display: inline-block;
+	font-family: Georgia,serif;
+	font-style: italic;
+	margin: 0 0 6px;
+	padding: 0 0 4px;
+}
+
+/*help dialog box */
+#plugintable div{
+	display:block;
+	width:22px;
+	height:22px;
+	background: url("img/bb_icons.png") no-repeat scroll 20px 20px transparent;
+	margin:0 auto;
+}
+#plugintable .bold {
+	background-position: 0 0
+}
+
+#plugintable .italic {
+	background-position: -60px 0
+}
+
+#plugintable .underline {
+	background-position: -140px 0
+}
+
+#plugintable .strikeout {
+	background-position: -120px 0
+}
+
+#plugintable .undo {
+	background-position: -160px 0
+}
+
+#plugintable .redo {
+	background-position: -100px 0
+}
+
+#plugintable .cleanup {
+	background-position: -40px 0
+}
+
+#plugintable .bulletlist {
+	background-position: -20px 0
+}
+
+#plugintable .numberlist {
+	background-position: -80px 0
+}
+
+#plugintable .leftjustify {
+	background-position: -460px 0
+}
+
+#plugintable .rightjustify {
+	background-position: -480px 0
+}
+
+#plugintable .center {
+	background-position: -420px 0
+}
+
+#plugintable .alignfull {
+	background-position: -440px 0
+}
+
+#plugintable .anchor {
+	background-position: -200px 0
+}
+
+#plugintable .indent {
+	background-position: -400px 0
+}
+
+#plugintable .outdent {
+	background-position: -540px 0
+}
+
+#plugintable .link {
+	background-position: -500px 0
+}
+
+#plugintable .unlink {
+	background-position: -640px 0
+}
+
+#plugintable .subscript {
+	background-position: -600px 0
+}
+
+#plugintable .superscript {
+	background-position: -620px 0
+}
+
+#plugintable .removeformatting {
+	background-position: -580px 0
+}
+
+#plugintable .newdocument {
+	background-position: -520px 0
+}
+
+#plugintable .image {
+	background-position: -380px 0
+}
+
+#plugintable .help {
+	background-position: -340px 0
+}
+
+#plugintable .code {
+	background-position: -260px 0
+}
+
+#plugintable .horizontalrule {
+	background-position: -360px 0
+}
+
+#plugintable .visualaid {
+	background-position: -660px 0
+}
+
+#plugintable .charmap {
+	background-position: -240px 0
+}
+
+#plugintable .paste {
+	background-position: -560px 0
+}
+
+#plugintable .copy {
+	background-position: -700px 0
+}
+
+#plugintable .cut {
+	background-position: -680px 0
+}
+
+#plugintable .blockquote {
+	background-position: -220px 0
+}
+
+.defaultSkin .forecolor span.mceAction {
+	background-position: -720px 0;
+	position:absolute;
+	z-index:0;
+	height:22px;
+	width:20px;
+}
+
+.defaultSkin .backcolor span.mceAction {
+	background-position: -760px 0;
+	position:absolute;
+	z-index:0;
+	height:22px;
+	width:20px;
+}
+/*plugins*/
+#plugintable .forecolorpicker {
+	background-position: -722px -1px;
+	background-color: #ff0000;
+	border: 1px solid #eee;
+	width:19px;
+	height:20px;
+}
+
+#plugintable .backcolorpicker {
+	background-position: -760px -1px;
+	background-color:#99CC00;
+	border: 1px solid #eee;
+	width:20px;
+	height:19px;
+}
+
+#plugintable .advhr {
+	background-position: -0px -20px
+}
+
+#plugintable .ltr {
+	background-position: -20px -20px
+}
+
+#plugintable .rtl {
+	background-position: -40px -20px
+}
+
+#plugintable .emotions {
+	background-position: -60px -20px
+}
+
+#plugintable .fullpage {
+	background-position: -80px -20px
+}
+
+#plugintable .fullscreen {
+	background-position: -100px -20px
+}
+
+#plugintable .iespell {
+	background-position: -120px -20px
+}
+
+#plugintable .insertdate {
+	background-position: -140px -20px
+}
+
+#plugintable .inserttime {
+	background-position: -160px -20px
+}
+
+#plugintable .absolute {
+	background-position: -180px -20px
+}
+
+#plugintable .backward {
+	background-position: -200px -20px
+}
+
+#plugintable .forward {
+	background-position: -220px -20px
+}
+
+#plugintable .insert_layer {
+	background-position: -240px -20px
+}
+
+#plugintable .insertlayer {
+	background-position: -260px -20px
+}
+
+#plugintable .movebackward {
+	background-position: -280px -20px
+}
+
+#plugintable .moveforward {
+	background-position: -300px -20px
+}
+
+#plugintable .media {
+	background-position: -320px -20px
+}
+
+#plugintable .nonbreaking {
+	background-position: -340px -20px
+}
+
+#plugintable .pastetext {
+	background-position: -360px -20px
+}
+
+#plugintable .pasteword {
+	background-position: -380px -20px
+}
+
+#plugintable .selectall {
+	background-position: -400px -20px
+}
+
+#plugintable .preview {
+	background-position: -420px -20px
+}
+
+#plugintable .print {
+	background-position: -440px -20px
+}
+
+#plugintable .cancel {
+	background-position: -460px -20px
+}
+
+#plugintable .save {
+	background-position: -480px -20px
+}
+
+#plugintable .replace {
+	background-position: -500px -20px
+}
+
+#plugintable .find {
+	background-position: -520px -20px
+}
+
+#plugintable .styleprops {
+	background-position: -560px -20px
+}
+
+#plugintable .table {
+	background-position: -580px -20px
+}
+
+#plugintable .cell_props {
+	background-position: -600px -20px
+}
+
+#plugintable .delete_table {
+	background-position: -620px -20px
+}
+
+#plugintable .delete_col {
+	background-position: -640px -20px
+}
+
+#plugintable .delete_row {
+	background-position: -660px -20px
+}
+
+#plugintable .col_after {
+	background-position: -680px -20px
+}
+
+#plugintable .col_before {
+	background-position: -700px -20px
+}
+
+#plugintable .row_after {
+	background-position: -720px -20px
+}
+
+#plugintable .row_before {
+	background-position: -740px -20px
+}
+
+#plugintable .merge_cells {
+	background-position: -760px -20px
+}
+
+#plugintable .table_props {
+	background-position: -980px -20px
+}
+
+#plugintable .row_props {
+	background-position: -780px -20px
+}
+
+#plugintable .split_cells {
+	background-position: -800px -20px
+}
+
+#plugintable .template {
+	background-position: -820px -20px
+}
+
+#plugintable .visualchars {
+	background-position: -840px -20px
+}
+
+#plugintable .abbr {
+	background-position: -860px -20px
+}
+
+#plugintable .acronym {
+	background-position: -880px -20px
+}
+
+#plugintable .attribs {
+	background-position: -900px -20px
+}
+
+#plugintable .cite {
+	background-position: -920px -20px
+}
+
+#plugintable .del {
+	background-position: -940px -20px
+}
+
+#plugintable .ins {
+	background-position: -960px -20px
+}
+
+#plugintable .pagebreak {
+	background-position: 0 -40px
+}
+
+#plugintable .restoredraft {
+	background-position: -20px -40px
+}
+
+#plugintable .spellcheck {
+	background-position: -540px -20px
+}
+#plugintable .tiny_wiris_formulaEditor{
+	background-position:  -60px -40px;
+}
+
+#plugintable .bb_file {
+  background-position: -80px -40px;
+}
+
+#plugintable .bb_mashupbutton {
+  background-position: -40px -40px;
+}
+
+#plugintable .fontFormat {
+  background-position: -798px -41px;
+  
+}
+#plugintable .fontSize {
+  background-position: -714px -40px;
+}
+#plugintable .fontFamily {
+  background-position: -753px -40px;
+}
+#plugintable .arrowUp {
+  background-position: -100px -40px;
+}
+#plugintable .arrowDown {
+  background-position: -160px -40px;
+}
